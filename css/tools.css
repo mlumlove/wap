@@ -1,0 +1,399 @@
+@charset "utf-8";
+
+/* 星座运势 */
+.forture{padding:10px 0 0}
+.etp_tab{ display:block; overflow:hidden; margin:0px auto; width:95%}
+.etp_tab li{ display:block; float:left; width:20%; text-align:center;color:#fff}
+.etp_tab li span{ display:inline-block; padding:2px 12px;background:none; line-height:24px; font-size:1.4rem; border-radius:5px}
+.etp_tab li.on span{ background:#fff; color:#000}
+.etp_tab_con{ width:95%; margin:0 auto; display:none}
+.etp_tab_con li{ display:block; float:left; width:47%; margin-right:3%;border:1px solid #e8d9c9; background:#fff; margin-bottom:10px}
+.etp_tab_con li:nth-child(2n){ margin-right:0}
+.etp_tab_con li .pic{ width:100%;overflow:hidden}
+.etp_tab_con li img{ width:100%; height:100%}
+.etp_tab_con li .g_info{margin:5px 0; padding:0 3px}
+.etp_tab_con li .g_info span{ display:inline-block; font-size:1.4rem; line-height:24px; color:#808080}
+.etp_tab_con li .g_info span:nth-child(1){color:#ff0000}
+
+.zs_area{ margin-top: 15px; padding: 20px 10px}
+.zs_area .fl{ width: 60px; height: 60px; overflow:hidden; background:url(../img/index/xzq.png) no-repeat; background-size:100% auto; text-align:center}
+.zs_area .fl img{width:80%;margin:0 auto}
+.zs_area .rl{ width: 65%; background: #ac6a2f; border-radius: 10px; text-align: center; color: #fff; float: left;; margin-left: 10px}
+.zs_area .rl h4{ font-size: 1.8rem; line-height:30px; font-weight: normal; margin: 5px 0 0}
+.zs_area .rl p{ font-size: 1.4rem; line-height: 24px;}
+
+.luck_lst{padding: 0 5px} 
+.luck_lst li{ display: inline-block; float: left; width: 49%;font-size: 1.4rem; line-height: 24px; color: #be8345; margin: 0 0px 20px 0}
+.luck_lst li .ico_star{ width: 80px; height: 13px; background: url(../img/index/ico_star.png) no-repeat; background-size: 100% auto; display: inline-block; vertical-align: top; margin-top:6px}
+.luck_tab .luck_lst li .ico_star{background:url(../img/tool/ico_star02.png) no-repeat;background-size: 100% auto}
+.luck_lst li .ico_star.is00{ background-position: 0 0} /*全灰*/
+.luck_lst li .ico_star.is01{ background-position: 0 -18px} /*1颗星*/
+.luck_lst li .ico_star.is02{ background-position: 0 -37px} /*2颗星*/
+.luck_lst li .ico_star.is03{ background-position: 0 -57px} /*3颗星*/
+.luck_lst li .ico_star.is04{ background-position: 0 -76px} /*4颗星*/
+.luck_lst li .ico_star.is05{ background-position: 0 -94px} /*5颗星*/
+.luck .l_tit{ font-size: 1.6rem; line-height: 24px; font-weight: normal; padding: 10px 0}
+.luck .l_txt{font-size: 1.4rem; line-height: 24px; text-indent: 24px }
+
+
+.lk_deatil{background:#fff;padding:0 10px}
+.lk_bg{padding:0 10px}
+.luck_tab{display:none}
+.luck_tab .luck_lst li{ color:#fff}
+.luck_tab .zs_area .rl{ background:#fff; background-size:100% auto; color:#711b65}
+.luck .luck_tab .l_tit{ color:#000}
+.luck_tab .zs_area .rl p{ font-size:1.2rem}
+.forture .etp_tab li{ width:16.6%}
+.forture .etp_tab li span{padding:2px 10px}
+
+.hot_tool{width:100%;margin:0px auto;background:none; padding:10px 10px;color:#fff}
+.b_f{background:#fff}
+.scbz .title{font-size:1.4rem; line-height:24px;border:1px solid #fff;width: 100%; margin:10px auto; padding:5px 10px 10px; }
+.scbz .title dt{ font-size:1.4rem; line-height:30px}
+.scbz .name h2{ margin:20px 0 5px; font-size:1.4rem; line-height:30px; font-weight:normal}
+.scbz .name ul li{float: left;height: 30px;line-height: 30px;margin: 0 5px 0 0; display:inline-block}
+.scbz .name ul li label,.scbz .name ul li p,.scbz .name p{ display:inline-block; font-size:1.4rem; line-height:24px}
+.scbz .name ul li p input,.scbz .name ul li p select{width: 52px;background: none;color: #fff;border: 1px solid #fff;font-size:1.4rem}
+.btn_gossip{width:80px;height:80px;background:url(../img/tool/ico_gossip.png) no-repeat; background-size:100% auto; margin:30px auto; display:block}
+.btn_gossip.on{transform:rotate(360deg);-webkit-transform:rotate(360deg);-moz-transform:rotate(360deg);-o-transform:rotate(360deg);-ms-transform:rotate(360deg);;transition:All 0.4s ease-in-out;-webkit-transition:All 0.4s ease-in-out;-moz-transition:All 0.4s ease-in-out;-o-transition:All 0.4s ease-in-out}
+
+.shengchen_result .fortune_infor{width:100%;height:auto}
+.shengchen_result .fortune_infor .tb{text-align:center; margin-bottom:10px}
+.shengchen_result .fortune_infor .tb td{border:1px solid #a561aa;vertical-align:middle}
+.shengchen_result .fortune_infor .tb td p{padding:10px 5px;line-height:24px; font-size:1.4rem}
+.shengchen_result .fortune_infor .tlf{text-align:left}
+.shengchen_result .fortune_infor .tb .t_tit{background:#a561aa;color:#fff}
+.shengchen_result .fortune_infor .tb .col1{color:#a561aa}
+.shengchen_result .fortune_infor .tb .col2{color:#ff0000}
+.fortune_infor_box{border:1px solid #7ecef4;margin-top:10px;color:#000}
+.fortune_infor_box h3{border-bottom:1px solid #7ecef4;line-height:24px;text-overflow:ellipsis;white-space:nowrap;overflow:hidden; font-size:1.4rem; padding:5px 0 5px 10px; font-weight:normal}
+.fortune_infor_box p{padding:0px 5px;line-height:24px; font-size:1.4rem;color:#000}
+.fortune_infor_box .tb3{margin-bottom:0}
+.fortune_infor_box .tb3 td{border-bottom:1px solid #e8d9c9;border-left:none;border-right:none;border-top:none}
+.fortune_infor_box .tb3 td.t_tit{border-right:1px solid #a561aa}
+.shengchen_result .fortune_infor .tlf{color:#fff}
+.shengchen_result .fortune_infor .tb4{margin-bottom:0;border:none;border-bottom:1px solid #e8d9c9}
+.shengchen_result .fortune_infor .tb4 td{border:none;border-bottom:1px solid #e8d9c9}
+.shengchen_result .fortune_infor_box{border: 1px solid #a561aa;color: #a561aa;}
+.shengchen_result .fortune_infor_box h3 {border-bottom: 1px solid #a561aa;}
+.shengchen_result .fortune_infor_box p{color:#a561aa}
+
+.ntx_footer{position:fixed;width:100%;left:0;bottom:0}
+.ntx_footer li{float:left;width:50%;padding:7px 0;text-align:center;background:url(../img/tool/bg_share.png) repeat-x;background-size:100% auto;height:40px}
+.ntx_footer li.se{background:#382553;}
+.ntx_footer li span:nth-child(2){color:#fff;font-size:1.4rem}
+.ntx_footer li span.ntx_text{display:inline-block;width:28px;height:28px;margin-right:6px;background:url(../img/tool/ico_yao.png) no-repeat;background-size:100% 100%;vertical-align:-6px}
+.ntx_footer li span.ntx_fx{display:inline-block;width:22.5px;height:22.5px;margin-right:10px;background:url(../img/ico/ico_zf.png) no-repeat;background-size:100% 100%;vertical-align:-3px}
+
+.xzsp{ position:relative}
+.xzsp .pop{ width: 100%; background:#2a2048 url(../img/tool/bg_sign.png) no-repeat;background-size:100% auto;height: auto; overflow: hidden; padding: 30px 10px 10px; position: absolute; top:50px; left: 0; display: none}
+.xzsp .pop li{ display: inline-block; float: left; width: 22%; text-align: center; margin: 0 0 20px 9px}
+.xzsp .u{ margin-top:30px} 
+.xzsp .u li{ display:block;width:58%;margin:0 auto 10px}
+.xzsp .u li span,.xzsp .u li p{display:inline-block; font-size:1.4rem; line-height:24px;}
+.xzsp .u li p{margin-left:10px;border:1px solid #fff;width:50%;cursor: pointer;text-align:center; position:relative;}
+.xzsp .u li p input{ background:none; color:#fff}
+.xzsp .u li p em{ display:block; width: 0;height: 0;border-left: 5px solid transparent;border-right: 5px solid transparent;border-top: 10px solid #fff; position:absolute; top:8px; right:4px;}
+.check_result{ display:block; width:70%; line-height:40px; color:#fff; text-align:center; font-size:1.6rem; border-radius:5px; margin:30px auto; border:1px solid #bf41e8;background:-moz-linear-gradient(top,rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.5) 60%, rgba(255, 255, 255, 0.7) 98%, #FFFFFF 100%);background:-webkit-linear-gradient(top,rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.5) 60%, rgba(255, 255, 255, 0.7) 98%, #FFFFFF 100%);background:-o-linear-gradient(top,rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.5) 60%, rgba(255, 255, 255, 0.7) 98%, #FFFFFF 100%)}
+.xzsp .tool_ssk1{border:1px solid #e8d9c9;width:96%;margin:20px auto 0;overflow:hidden;}
+.xzsp .tool_ssk1 h2{font-size:1.6rem;border-bottom: 1px solid #e8d9c9;line-height: 30px; font-weight:normal}
+.xzsp .tool_ssk1 h2 span{ display:inline-block; width:30px; height:20px;background: url(../img/tool/ico_hand.png) 0 0 no-repeat; background-size:100% auto; vertical-align:middle; margin-right:10px}
+.xzsp .tool_ssk1 .row li{ padding:10px 10px; border-bottom:1px solid #e8d9c9; font-size:1.4rem; line-height:24px; }
+.xzsp .tool_ssk1 .row li:last-child{ border-bottom:none}
+.xzsp .tool_ssk1 .row li a{color:#fff}
+.btn_check{ display:inline-block; float:right;font-size:1.4rem; color:#fff!important; padding:0 10px; border-radius:3px;border:1px solid #bf41e8;background:-moz-linear-gradient(top,rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.5) 60%, rgba(255, 255, 255, 0.7) 98%, #FFFFFF 100%);background:-webkit-linear-gradient(top,rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.5) 60%, rgba(255, 255, 255, 0.7) 98%, #FFFFFF 100%);background:-o-linear-gradient(top,rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.5) 60%, rgba(255, 255, 255, 0.7) 98%, #FFFFFF 100%)}
+.xzsp .t_tit{ font-size:1.6rem; line-height:24px; padding-bottom:10px; border-bottom:1px solid #7ecef4; font-weight:normal; text-align:center; color:#000}
+.t_describe{padding:10px 10px}
+.t_describe p{ font-size:1.4rem; line-height:24px; color:#0e6a8f}
+
+.birthday .u li p{width:100%}
+.ssk2 .row li{display:inline-block; float:left; width:50%; border-right:1px solid #e8d9c9}
+.ssk2 .row li:last-child{ border-bottom:1px solid #e8d9c9!important}
+.birthday .ssk2 .row li:nth-child(2n),.name .ssk2 .row li:nth-child(3n){ border-right:none}
+.birthday .tool_ssk1,.name .tool_ssk1{ border-bottom:none}
+
+.xzsp .tips{background: url(../img/tool/bg_zp.png) repeat;background-size: 100% auto; width:100%; padding:10px 10px; margin-top:10px; border:1px solid #4c2758; color:#fff}
+.xzsp .tips h3{ font-size:1.6rem; line-height:28px; font-weight:normal; text-align:center}
+.xzsp .tips p{ font-size:1.4rem; line-height:24px}
+.name li label{ font-size:1.4rem; line-height:24px}
+.name li input{width:50%;border:1px solid #996633; display:inline-block; margin-left:10px; font-size:1.4rem; line-height:24px; color:#bb7e3c; padding-left:5px}
+.name li i{ display:inline-block; width:20px; height:20px; background:url(../img/tool/ico_pencil.png) no-repeat; background-size:100% auto; vertical-align:top; margin-right:10px}
+.name .ssk2 .row li{width:33.33%; text-align:center}
+
+.name_result .t_tit .rl{ font-size:1.2rem}
+.name_result .t_describe p{ display:inline-block; width:48%}
+
+.qq li input{width:100%; border-radius:5px}
+.c_tip{ font-size:1.4rem; line-height:24px}
+
+.QQ_result .t_tit{ color:#333}
+.QQ_result dl{padding:10px 0}
+.QQ_result dl dt{ font-size:1.6rem; line-height:24px; color:#333; padding:10px 0;}
+.QQ_result dl dd{ font-size:1.4rem; line-height:24px; color:#807b6a}
+
+.lingqian{ padding:20px 0 100px}
+.pic_lq{ width:139px; height:200px; background:url(../img/tool/pic_lq.png) no-repeat 0 0; background-size:100% auto; margin:20px auto}
+.lq_text{ font-size:1.6rem; text-align:center; line-height:30px}
+.lq_text2{ font-size:1.2rem; text-align:center; line-height:24px}
+.lingqian a{ display:block; width:80px; height:80px; margin:10px auto}
+
+.lingqian_result{width:96%;margin:0 auto;}
+.lingqian_result h2{padding-top:20px;height:30px;line-height:30px;border-bottom:1px solid #2B81AF;text-align:center}
+.lingqian_result h2 b{font-weight:bold;font-size:20px}
+.tool_wrap .tool_lingqian_result h3{font-weight:bold;line-height:30px;padding:10px 0}
+.tool_wrap .tool_lingqian_result p{display:block;font-size:16px;line-height:25px;text-indent:10px}
+
+.page {display: none;position: absolute;top: 0;left: 0;bottom: 0;right: 0;width: 100%;height: 100%;overflow: hidden;}
+#datescroll div{float: left;margin-left: 10%;margin-top: 15px;padding-right: 22px;}
+#datescroll_datetime div{float: left;margin-left: 10%;padding-right: 22px;}
+#yearwrapper{position: absolute;left: 0;top:45px;bottom: 60px;width:80%;}
+#monthwrapper{position: absolute;left: 26%;top:45px;bottom: 60px;width:80%;}
+#daywrapper{position: absolute;left: 50%;top:45px;bottom: 60px;width:80%;}
+#Hourwrapper{position: absolute;left: 0;top:195px;bottom: 68px;width:80%;}
+#Minutewrapper{position: absolute;left: 26%;top:195px;bottom: 68px;width:80%;}
+#Secondwrapper{position: absolute;left: 50%;top:195px;bottom: 68px;width:80%;}
+#Hourwrapper ul li{color: #898989;font-size: 14px;}
+#Minutewrapper ul li{color: #898989;font-size: 14px;}
+#Secondwrapper ul li{color: #898989;font-size: 14px;}
+#yearwrapper ul li{color: #898989;font-size: 14px;}
+#monthwrapper ul li{color: #898989;font-size: 14px;}
+#daywrapper ul li{color: #898989;font-size: 14px;}
+#markyear{position:relative; margin-left: 76px;top:-2px;}
+#markmonth{position:relative; margin-left: 40px;top:-2px;}
+#markday{position:relative; margin-left: 42px;top:-2px;}
+#markhour{position:relative; margin-left: 62px;top:-2px;}
+#markminut{position:relative; margin-left: 58px;top:-2px;}
+#marksecond{position:relative; margin-left: 68px;top:-2px;}
+#dateheader{width: 100%;height: 50px;background: #79C12F;text-align: center;color: #fff;line-height: 50px;font-size: 20px;}
+#setcancle ul{text-align: center;line-height: 30px; margin:1px auto;font-size: 20px;}
+#setcancle ul li{border-radius:3px;float: left;width: 40%;height: 30px;list-style-type: none;font-family:'microsoft yahei';font-size:16px; line-height:30px}
+#dateconfirm{position: absolute;background:#79C12F;left:20px;color:#fff;}
+#datecancle{position: absolute;background:  #dcdddd;right:20px;width: 40%;color:#666;}
+#dateshadow{display: none;position: absolute;width: 100%;height: 100%;top:0;left:0;background: #000; filter:alpha(Opacity=50);-moz-opacity:0.5;opacity: 0.5; z-index:10}
+#datePage{font-size: 22px; border-radius: 3px; position:absolute;top:110px;MARGIN-RIGHT: auto;vertical-align:middle;
+MARGIN-LEFT: auto;width: 80%;;height: 240px;background: #FFFFFF;z-index:9999999;}
+#datetitle{width: 100%;height:50px;background: #79C12F;text-align: center;color: #fff;line-height: 50px;font-size: 20px;font-family:'microsoft yahei';}
+#datetitle h1{font-weight:normal;}
+#datemark{font-size: 18px;left:5%;width: 90%;height: 30px;position:absolute;top:105px;background:#eee;border:1px solid #eee;}
+#timemark{font-size: 18px;left:5%;width: 90%;height: 30px;position:absolute;top:242px;background:#eee;border:1px solid #eee;}
+#datescroll{background: #F8F8F8;width:94%; margin:10px 3%;border: 1px solid #E0E0E0;border-radius: 4px;height: 120px;text-align: center;line-height: 40px;}
+#datescroll_datetime{display: none;background:#F8F8F8;width:94%; margin:10px 3%;margin-top: 10px;border: 1px solid #E0E0E0;border-radius: 4px;height: 120px;text-align: center;line-height: 40px;}
+#yearwrapper ul,#monthwrapper ul,#daywrapper ul{width:40%;}
+#Hourwrapper ul,#Minutewrapper ul,#Secondwrapper ul{width:40%;}
+#dateFooter{width:100%;background: #fff;height: 50px;bottom: 0px;position: absolute;}
+.demo{width:300px;margin:40px auto 0 auto;}
+.demo .lie{margin:0 0 20px 0;}
+.kbtn{line-height:24px;font-size:1.4rem; height:100%; width:100%}
+#datetitle h1{font-size:18px;}
+
+.shake{ -webkit-animation-name: shake-horizontal; -ms-animation-name: shake-horizontal; animation-name: shake-horizontal; -webkit-animation-duration: 100ms; -ms-animation-duration: 100ms; animation-duration: 100ms; -webkit-animation-iteration-count: 5; -ms-animation-iteration-count: 5; animation-iteration-count:5; -webkit-animation-timing-function: ease-in-out; -ms-animation-timing-function: ease-in-out; animation-timing-function: ease-in-out; -webkit-animation-delay: 0s; -ms-animation-delay: 0s; animation-delay: 0s; -webkit-animation-play-state: running; -ms-animation-play-state: running; animation-play-state: running; }
+
+@-webkit-keyframes shake-horizontal {
+  0% { -webkit-transform: translate(0px, 0px) rotate(0deg); }
+  2% { -webkit-transform: translate(-6px, 0px) rotate(0deg); }
+  4% { -webkit-transform: translate(5px, 0px) rotate(0deg); }
+  6% { -webkit-transform: translate(3px, 0px) rotate(0deg); }
+  8% { -webkit-transform: translate(-3px, 0px) rotate(0deg); }
+  10% { -webkit-transform: translate(2px, 0px) rotate(0deg); }
+  12% { -webkit-transform: translate(6px, 0px) rotate(0deg); }
+  14% { -webkit-transform: translate(5px, 0px) rotate(0deg); }
+  16% { -webkit-transform: translate(5px, 0px) rotate(0deg); }
+  18% { -webkit-transform: translate(5px, 0px) rotate(0deg); }
+  20% { -webkit-transform: translate(-4px, 0px) rotate(0deg); }
+  22% { -webkit-transform: translate(5px, 0px) rotate(0deg); }
+  24% { -webkit-transform: translate(-1px, 0px) rotate(0deg); }
+  26% { -webkit-transform: translate(7px, 0px) rotate(0deg); }
+  28% { -webkit-transform: translate(-5px, 0px) rotate(0deg); }
+  30% { -webkit-transform: translate(8px, 0px) rotate(0deg); }
+  32% { -webkit-transform: translate(-8px, 0px) rotate(0deg); }
+  34% { -webkit-transform: translate(-2px, 0px) rotate(0deg); }
+  36% { -webkit-transform: translate(2px, 0px) rotate(0deg); }
+  38% { -webkit-transform: translate(6px, 0px) rotate(0deg); }
+  40% { -webkit-transform: translate(-10px, 0px) rotate(0deg); }
+  42% { -webkit-transform: translate(-6px, 0px) rotate(0deg); }
+  44% { -webkit-transform: translate(0px, 0px) rotate(0deg); }
+  46% { -webkit-transform: translate(3px, 0px) rotate(0deg); }
+  48% { -webkit-transform: translate(-3px, 0px) rotate(0deg); }
+  50% { -webkit-transform: translate(6px, 0px) rotate(0deg); }
+  52% { -webkit-transform: translate(0px, 0px) rotate(0deg); }
+  54% { -webkit-transform: translate(-6px, 0px) rotate(0deg); }
+  56% { -webkit-transform: translate(-3px, 0px) rotate(0deg); }
+  58% { -webkit-transform: translate(-9px, 0px) rotate(0deg); }
+  60% { -webkit-transform: translate(-4px, 0px) rotate(0deg); }
+  62% { -webkit-transform: translate(-3px, 0px) rotate(0deg); }
+  64% { -webkit-transform: translate(-3px, 0px) rotate(0deg); }
+  66% { -webkit-transform: translate(-2px, 0px) rotate(0deg); }
+  68% { -webkit-transform: translate(6px, 0px) rotate(0deg); }
+  70% { -webkit-transform: translate(-8px, 0px) rotate(0deg); }
+  72% { -webkit-transform: translate(9px, 0px) rotate(0deg); }
+  74% { -webkit-transform: translate(-6px, 0px) rotate(0deg); }
+  76% { -webkit-transform: translate(-10px, 0px) rotate(0deg); }
+  78% { -webkit-transform: translate(-7px, 0px) rotate(0deg); }
+  80% { -webkit-transform: translate(1px, 0px) rotate(0deg); }
+  82% { -webkit-transform: translate(0px, 0px) rotate(0deg); }
+  84% { -webkit-transform: translate(-2px, 0px) rotate(0deg); }
+  86% { -webkit-transform: translate(-3px, 0px) rotate(0deg); }
+  88% { -webkit-transform: translate(-5px, 0px) rotate(0deg); }
+  90% { -webkit-transform: translate(-9px, 0px) rotate(0deg); }
+  92% { -webkit-transform: translate(7px, 0px) rotate(0deg); }
+  94% { -webkit-transform: translate(8px, 0px) rotate(0deg); }
+  96% { -webkit-transform: translate(-8px, 0px) rotate(0deg); }
+  98% { -webkit-transform: translate(4px, 0px) rotate(0deg); } 
+}
+
+
+@media screen and (min-width:360px){
+	.sign .lank{width: 102px}	
+	.sign .lank.lk2{ right: 115px}
+	.sign .lank.lk1 i{ margin-left: 20px}
+	.sign .lank .bar{left:40px;}
+	.hot_test .test_num{ padding: 10px 10px}
+	.test_num i{ margin:0px 4px 0 4px; }
+	.zs_area .rl{ width: 71%}
+	.shop_tab{ margin-left:100px}
+	.shop_tab li{margin-left:30px}
+
+}
+
+@media screen and (min-width:414px){
+	.sign .lank{width: 108px;top:14px;}	
+	.sign .lank.lk2{ right: 123px}
+	.test_num i{ margin:0px 4px 0 10px; }
+	.zs_area .rl{ width: 74%}
+	
+}
+
+
+@media screen and (min-width:480px){
+	.scbz .title{font-size:1.8rem;line-height:28px}
+	.scbz .title dt,.scbz .name h2{ font-size:1.8rem; line-height:35px}
+	.scbz .name ul li{ margin:0 10px}
+	.scbz .name ul li label,.scbz .name ul li p,.scbz .name p{font-size:1.8rem; line-height:28px}
+	.scbz .name ul li p input,.scbz .name ul li p select{width:70px;font-size:1.8rem}
+	.btn_gossip{width:100px;height:100px}
+	
+	.shengchen_result .fortune_infor .tb td p,.fortune_infor_box h3,.fortune_infor_box p{line-height:28px;font-size:1.8rem}
+	.ntx_footer li span:nth-child(2){font-size:1.8rem}
+	.ntx_footer li span.ntx_text{width:37px;height:37px;background-size:100% 100%;vertical-align:-12px}
+	.ntx_footer li span.ntx_fx{width:33px;height:33px;background-size:100% 100%;vertical-align:-7px}
+	.xzsp .u li span,.xzsp .u li p{font-size:1.8rem; line-height:28px;}
+	.check_result{ font-size:2rem;line-height:50px; }
+	.xzsp .tool_ssk1 h2{font-size:2rem;line-height:40px}
+	.xzsp .tool_ssk1 h2 span{ width:44px; height:30px}
+	.xzsp .tool_ssk1 .row li,.t_describe p{ font-size:1.8rem; line-height:28px; }
+	.btn_check{font-size:1.8rem}
+	.xzsp .t_tit{font-size:2rem; line-height:28px;}
+	
+	.xzsp .tips h3{ font-size:2rem; line-height:32px}
+	.xzsp .tips p{ font-size:1.8rem; line-height:28px}
+	
+	.name li label{ font-size:1.8rem; line-height:28px}
+	.name li input{font-size:1.8rem; line-height:28px}
+	.name li i{width:25px; height:25px}
+	.name_result .t_tit .rl{ font-size:1.4rem}
+	
+	.QQ_result dl dt{ font-size:2rem; line-height:30px}
+	.QQ_result dl dd{ font-size:1.8rem; line-height:28px}
+	.pic_lq{ width:160px; height:230px; }
+	.lq_text{ font-size:2rem; line-height:34px}
+	.lq_text2{ font-size:1.4rem; line-height:28px}
+	.lingqian a{ width:100px; height:100px;}
+	
+	.zs_area .rl{ width: 78%}
+	.zs_area .rl h4 {font-size: 2.2rem;}
+	.zs_area .rl p{font-size: 1.8rem;line-height: 28px;}
+	.luck .l_tit{ font-size: 2.1rem; line-height: 28px}
+	.luck .l_txt{font-size: 1.8rem; line-height: 28px; }
+	.etp_tab li span{ font-size:1.8rem; line-height:28px}
+	.etp_tab_con li .g_info span{font-size:1.8rem; line-height:28px}
+	
+	.luck_lst li{ font-size: 1.8rem; line-height: 28px}
+	.luck_lst li .ico_star{ width: 102px; height: 17px}
+	.luck_tab .luck_lst li .ico_star{background:url(../img/tool/ico_star02.png) no-repeat;background-size:100% auto}
+	.luck_lst li .ico_star.is00{ background-position: 0 0} /*全灰*/
+	.luck_lst li .ico_star.is01{ background-position: 0 -23px} /*1颗星*/
+	.luck_lst li .ico_star.is02{ background-position: 0 -47px} /*2颗星*/
+	.luck_lst li .ico_star.is03{ background-position: 0 -72px} /*3颗星*/
+	.luck_lst li .ico_star.is04{ background-position: 0 -96px} /*4颗星*/
+	.luck_lst li .ico_star.is05{ background-position: 0 -119px} /*5颗星*/
+	
+	.kbtn{line-height:30px; font-size:1.8rem}
+	#Hourwrapper ul li{font-size: 18px;}
+	#Minutewrapper ul li{font-size: 18px;}
+	#Secondwrapper ul li{font-size: 18px;}
+	#yearwrapper ul li{font-size: 18px;}
+	#monthwrapper ul li{font-size: 18px;}
+	#daywrapper ul li{font-size: 18px;}
+	
+	.c_tip{ font-size:1.8rem; line-height:28px}
+	
+}
+
+@media screen and (min-width:640px){
+	.scbz .title{font-size:2.2rem;line-height:34px}
+	.scbz .title dt,.scbz .name h2{ font-size:2.2rem; line-height:40px; margin-bottom:10px}
+	.scbz .name ul li{ margin:0 15px}
+	.scbz .name ul li label,.scbz .name ul li p,.scbz .name p{font-size:2.2rem; line-height:34px}
+	.scbz .name ul li p input,.scbz .name ul li p select{width:80px;font-size:2.2rem}
+	.btn_gossip{width:110px;height:110px}
+	
+	.shengchen_result .fortune_infor .tb td p,.fortune_infor_box h3,.fortune_infor_box p{line-height:34px;font-size:2.2rem}
+	.ntx_footer{max-width:640px;left:50%;margin-left:-320px}
+	.ntx_footer li{height:65px}
+	.ntx_footer li span:nth-child(2){font-size:2.4rem}
+	.ntx_footer li span.ntx_text{width:50px;height:50px;background-size:100% 100%;vertical-align:-16px}
+	.ntx_footer li span.ntx_fx{width:45px;height:45px;background-size:100% 100%;vertical-align:-10px}
+	.xzsp .u li{ margin-bottom:20px}
+	.xzsp .u li span,.xzsp .u li p{font-size:2.2rem; line-height:34px;}
+	.xzsp .u li p em{ top:14px}
+	.check_result{ font-size:2.4rem;line-height:60px; }
+	.xzsp .tool_ssk1 h2{font-size:2.4rem;line-height:50px}
+	.xzsp .tool_ssk1 h2 span{ width:52px; height:35px}
+	.xzsp .tool_ssk1 .row li,.t_describe p{ font-size:2.2rem; line-height:34px; }
+	.btn_check{font-size:2.2rem}
+	.xzsp .t_tit{font-size:2.2rem; line-height:34px;}
+	
+	.xzsp .tips h3{ font-size:2.4rem; line-height:36px;}
+	.xzsp .tips p{ font-size:2.2rem; line-height:34px}
+	
+	.name li label{ font-size:2.2rem; line-height:34px}
+	.name li input{font-size:2.2rem; line-height:34px}
+	.name li i{width:30px; height:30px}
+	.name_result .t_tit .rl{ font-size:1.6rem}
+	.pic_lq{ width:174px; height:250px; }
+	.lq_text{ font-size:2.4rem; line-height:40px}
+	.lq_text2{ font-size:2rem; line-height:34px}
+	.lingqian a{ width:110px; height:110px;}
+	
+	.zs_area .rl{ width: 83%}
+	.zs_area .rl h4 {font-size: 2.4rem}
+	.zs_area .rl p{font-size: 2.2rem;}
+	.luck .l_tit{ font-size: 2.5rem; line-height: 34px}
+	.luck .l_txt{font-size: 2.2rem; line-height: 34px; }
+	
+	.luck_lst li{ font-size: 2.2rem; line-height: 32px}
+	.luck_lst li .ico_star{ width: 110px; height: 20px}
+	.luck_tab .luck_lst li .ico_star{background: url(../img/tool/ico_star02.png) no-repeat; background-size: 100% auto}
+	.luck_lst li .ico_star.is00{ background-position: 0 0} /*全灰*/
+	.luck_lst li .ico_star.is01{ background-position: 0 -24px} /*1颗星*/
+	.luck_lst li .ico_star.is02{ background-position: 0 -49px} /*2颗星*/
+	.luck_lst li .ico_star.is03{ background-position: 0 -76px} /*3颗星*/
+	.luck_lst li .ico_star.is04{ background-position: 0 -101px} /*4颗星*/
+	.luck_lst li .ico_star.is05{ background-position: 0 -126px} /*5颗星*/
+	
+	.QQ_result dl dt{ font-size:2.4rem; line-height:36px}
+	.QQ_result dl dd{ font-size:2.2rem; line-height:34px}
+	
+	.kbtn{line-height:36px; font-size:2.2rem}
+	#Hourwrapper ul li{font-size: 22px;}
+	#Minutewrapper ul li{font-size: 22px;}
+	#Secondwrapper ul li{font-size: 22px;}
+	#yearwrapper ul li{font-size: 22px;}
+	#monthwrapper ul li{font-size: 22px;}
+	#daywrapper ul li{font-size: 22px;}
+	
+	.c_tip{ font-size:2.2rem; line-height:34px}
+	
+}	
+	
+	

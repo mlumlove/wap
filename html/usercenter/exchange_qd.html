@@ -1,0 +1,186 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>交流频道页-签到</title>
+<meta content="yes" name="apple-mobile-web-app-capable">
+<meta name="description" content="" />
+<meta name="keywords" content=""/>
+<meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=4.0, user-scalable=no" name="viewport" id="viewport" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<link rel="stylesheet" type="text/css" href="../../css/common.css">
+<link rel="stylesheet" type="text/css" href="../../css/userCenter.css">
+<script src="../../js/jquery.js"></script>
+<script>
+$(window).load(function(){
+	dt_img();
+	});
+
+$(window).resize(function(){
+	dt_img();
+	});
+function dt_img(){
+	$(".zan_people li:not(.last1)").height($(".zan_people li").width());
+	$(".zan_people li:not(.last1)").each(function() {
+	  if($(this).find("img").height()!=$(".zan_people li").height()){
+		  $(this).find("img").height($(".zan_people li").height());
+		  } 
+    });
+	};	
+
+</script>
+</head>
+
+<body>
+	<div class="wrapper wra2">
+    <header class="s_head sh1">
+    	<a class="a_pl" href="javascript:;"></a>
+       	<h2 class="xz_list">
+        	<span class="sp1">摩羯座</span>
+            <span class="sp2">12.29-1.19</span>
+            <b class="bo_arrow"></b>
+        </h2>
+        <a class="a_refresh" href="javascript:;"></a>
+     </header>
+		
+     <div class="ex_gradeList clearfix">
+     	<span class="ex_imgBox fl"><img src="../../img/xz/xz_mj.png" alt="星座摩羯"/></span>
+     	<div class="ex_qd fl">
+        	<p>今日热帖<span>18652</span></p>
+            <p>总&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;贴<span>18652</span></p>
+        </div>
+        
+        <div class="ex_qdbox fl">
+        	<a href="javascript:;">
+                <span class="sp_qdBtn"></span>
+                签到
+            </a>
+        </div>
+     </div> 
+
+     <ul class="group">
+     	<li class="first">
+        	<b></b>
+            <span class="qz_txt">本吧群组(5)</span>
+        </li>
+        <li>
+        	<b class="zd_btn">置顶</b>
+            <span class="zd_txt">我是摩羯男，应该找怎么样的女生呢？</span>
+        </li>
+        <li>
+        	<b class="zd_btn">置顶</b>
+            <span class="zd_txt">我是摩羯女，他是巨蟹男，还能不能愉快地，他是巨蟹男，还能不能愉快地，他是巨蟹男，还能不能愉快地</span>
+        </li>
+         <li>
+        	<b class="zd_btn">置顶</b>
+            <span class="zd_txt">我是摩羯女，他是巨蟹男，还能不能愉快地，他是巨蟹男，还能不能愉快地，他是巨蟹男，还能不能愉快地</span>
+        </li>
+     </ul>  
+    
+     <div class="ex_box">
+     	<div class="xz_listBox">
+        	<div class="dt_list">
+                <header class="dt_listTop clearfix">
+                	<div class="fl lf_con">
+                        <a class="head_img1" href="javascript:;">
+                            <img src="../../img/s_head.jpg" alt="小头像"/>
+                            <span class="dt_sex1"></span>
+                        </a>
+                        <span class="dt_zl">
+                             <p class="dt_nc"><span>我是欧巴</span><span class="sp_lz">楼主</span><b class="b3">8级</b></p>
+                             <p class="dt_min">1分钟前</p>
+                        </span>
+                    </div>
+                    <span class="rl dt_tips">举报</span>
+                </header>
+                <section class="dt_post">
+                    <p class="post_txt1">我是双鱼，他是射手，我18，她38，我相信我们会一直走下去。</p>
+                    <p class="post_txt2">一辈子，不离不弃！你们可以给我带来肯定吗，毕竟我那么爱他。一辈子，不离不弃！一辈子，不离不弃！</p>
+                </section>
+                
+                <div class="dt_zanBox">
+                    <span class="dt_zan"><b></b>2144</span>
+                    <span class="dt_pl"><b class="se"></b>回复</span>
+                </div>
+            </div>
+            <ul class="zan_people clearfix">
+                <li><span><img src="../../img/s_head.jpg"/></span></li>
+                <li><span><img src="../../img/s_head.jpg"/></span></li>
+                <li><span><img src="../../img/s_head.jpg"/></span></li>
+                <li><span><img src="../../img/s_head.jpg"/></span></li>
+                <li><span><img src="../../img/s_head.jpg"/></span></li>
+                <li class="last1">等赞过</li>
+            </ul>
+        </div>
+     </div>	
+     
+     <div class="ex_box">
+     	<div class="xz_listBox">
+        	<div class="dt_list">
+                <header class="dt_listTop clearfix">
+                	<div class="fl lf_con">
+                        <a class="head_img1" href="javascript:;">
+                            <img src="../../img/s_head.jpg" alt="小头像"/>
+                            <span class="dt_sex1"></span>
+                        </a>
+                        <span class="dt_zl">
+                             <p class="dt_nc"><span>我是欧巴</span><span class="sp_lz">楼主</span><b class="b1">1级</b></p>
+                             <p class="dt_min">1分钟前</p>
+                        </span>
+                    </div>
+                    <span class="rl dt_tips">举报</span>
+                </header>
+                <section class="dt_post">
+                    <p class="post_txt1">我是双鱼，他是射手，我18，她38，我相信我们会一直走下去。</p>
+                    <p class="post_txt2">一辈子，不离不弃！你们可以给我带来肯定吗，毕竟我那么爱他。一辈子，不离不弃！一辈子，不离不弃！</p>
+                </section>
+                
+                <div class="dt_zanBox">
+                    <span class="dt_zan"><b></b>2144</span>
+                    <span class="dt_pl"><b class="se"></b>回复</span>
+                </div>
+            </div>
+            <ul class="zan_people clearfix">
+                <li><span><img src="../../img/s_head.jpg"/></span></li>
+                <li><span><img src="../../img/s_head.jpg"/></span></li>
+                <li><span><img src="../../img/s_head.jpg"/></span></li>
+                <li><span><img src="../../img/s_head.jpg"/></span></li>
+                <li><span><img src="../../img/s_head.jpg"/></span></li>
+                <li class="last1">等赞过</li>
+            </ul>
+        </div>
+     
+     </div>	
+     <footer class="ftBox">
+        <ul class="ftList clearfix">
+            <li class="ft01"><a href="javascript:;"></a><span></span></li>
+            <li class="ft02"><a class="se" href="javascript:;"></a><span></span></li>
+            <li class="ft03"><a href="javascript:;"></a><span></span></li>
+            <li class="ft04"><a href="javascript:;"></a><span></span></li>
+        </ul>
+     </footer>
+     
+     <div class="ex_alertBox">
+     	<h3>提示</h3>
+     	<p class="p_txt">登录后才可以使用签到功能</p>
+       	<p class="p_btn">
+        	<a class="ex_logBtn" href="javascript:;">去登录</a>
+            <a class="ex_qxBtn" href="javascript:;">下次吧</a>
+        </p> 
+     </div>
+     <div class="ex_shade"></div>
+    </div>
+<script>
+$(".ex_qdbox").click(function(){
+	$(".ex_alertBox").animate({opacity:'show'},500);
+	$(".ex_shade").animate({opacity:'show',height:$(document).height()},500);
+	});
+$(".ex_alertBox p.p_btn a.ex_qxBtn").click(function(){
+	$(".ex_alertBox").animate({opacity:'hide'},500);
+	$(".ex_shade").animate({opacity:'hide'},500);
+	});	
+</script>    
+</body>
+</html>

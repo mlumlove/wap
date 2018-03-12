@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>星座速配</title>
+<meta content="yes" name="apple-mobile-web-app-capable">
+<meta name="description" content="" />
+<meta name="keywords" content=""/>
+<meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=4.0, user-scalable=no" name="viewport" id="viewport" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<link rel="stylesheet" type="text/css" href="../../css/common.css">
+<link rel="stylesheet" type="text/css" href="../../css/tools.css">
+<script src="../../js/jquery.js"></script>
+<script>
+$(function(){
+	$('.xzsp .u li p').click( function(){
+		$this = $(this);
+		$('.pop').show();
+		$('.pop li').click( function(){
+			_this=$(this);
+			$this.html( _this.find('img').attr('alt') )
+			$('.pop').hide();
+		});
+	})
+
+})
+</script>
+
+</head>
+
+<body>
+	<div class="wrapper pd bg_w">
+    	<header class="s_head">
+            <a class="re_btn" href="#2"><img src="../../img/ico/return.png" alt="返回按钮"/>返回</a>
+            <h1>星座速配</h1>
+        </header> 
+        
+        <div class="hot_tool xzsp">
+        	<ul class="u">
+                <li><span>男生星座</span><p>白羊座<em></em></p></li>
+                <li><span>女生星座</span><p>处女座<em></em></p></li>
+            </ul>
+            <a href="xzsp_result.html" class="check_result">查询匹对结果</a>
+            <div class="pop">
+                <ul>
+                    <li><img src="../../img/sign/con_01.png" alt="水瓶座"></li>
+                    <li><img src="../../img/sign/con_02.png" alt="双鱼座"></li>
+                    <li><img src="../../img/sign/con_03.png" alt="白羊座"></li>
+                    <li><img src="../../img/sign/con_04.png" alt="金牛座"></li>
+                    <li><img src="../../img/sign/con_05.png" alt="巨蟹座"></li>
+                    <li><img src="../../img/sign/con_06.png" alt="狮子座"></li>
+                    <li><img src="../../img/sign/con_07.png" alt="处女座"></li>
+                    <li><img src="../../img/sign/con_08.png" alt="天秤座"></li>
+                    <li><img src="../../img/sign/con_09.png" alt="天蝎座"></li>
+                    <li><img src="../../img/sign/con_10.png" alt="射手座"></li>
+                    <li><img src="../../img/sign/con_11.png" alt="摩羯座"></li>
+                    <li><img src="../../img/sign/con_12.png" alt="双子座"></li>
+                </ul>
+            </div>
+            
+            <div class="tool_ssk1">
+				<h2><span></span>试试看</h2>
+				<ul class="row">
+					<li><a href="#">邓超（水瓶座）+孙俪（天秤座）</a><a href="#" class="btn_check">查询</a></li>
+					<li><a href="#">邓超（水瓶座）+孙俪（天秤座）</a><a href="#" class="btn_check">查询</a></li>
+					<li><a href="#">邓超（水瓶座）+孙俪（天秤座）</a><a href="#" class="btn_check">查询</a></li>
+					<li><a href="#">邓超（水瓶座）+孙俪（天秤座）</a><a href="#" class="btn_check">查询</a></li>
+				</ul>
+			</div>
+            
+    	</div>
+    
+	</div>
+</body>
+</html>

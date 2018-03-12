@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>我的账户</title>
+<meta content="yes" name="apple-mobile-web-app-capable">
+<meta name="description" content="" />
+<meta name="keywords" content=""/>
+<meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=4.0, user-scalable=no" name="viewport" id="viewport" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<link rel="stylesheet" type="text/css" href="../../css/common.css">
+<link rel="stylesheet" type="text/css" href="../../css/userCenter.css">
+<script src="../../js/jquery.js"></script>
+<script src="../../js/common/uploadpic.js"></script>
+<script>
+$(function(){
+	$(".s_myacList li.sex").click(function(){
+		$(".alertBox").css('display','block');
+		$(".s_shade").css({display:"block",height:$(document).height()});
+		});
+		
+	 function hide(){
+		$(".alertBox").css('display','none');
+		$(".s_shade").css('display','none');
+			};
+		
+	$(".alertBox .al_p2 input").click(function(){
+		hide();
+		});
+		
+		$(".alertBox .s_box1 p span").click(function(){
+		var sex_txt = $(this).text();
+		$(".s_myacList li.sex span.sp1").text(sex_txt);
+		hide();
+		});
+		
+		$(".s_shade").click(function(){
+			hide();
+			})
+	
+	});
+</script>
+</head>
+
+<body class="bg_all">
+	<div class="wrapper bg_all1">
+    	<header class="s_head">
+            <a class="re_btn" href="#2"><img src="../../img/ico/return.png" alt="返回按钮"/>返回</a>
+            <h1>我的账户</h1>
+        </header>
+       
+        <section class="box1">
+            <ul class="s_myacList">
+            	<li class="clearfix rel">
+                	<p class="fl p1 mt4">头像</p>
+                    <div id="preview" class="preview rl"><a class="s_circle" href="javascript:;"><img src="../../img/s_head.jpg"/></a></div>
+                    <input type="file"  class="fileBtn" onchange="previewImage(this)" />
+                </li>
+                <li class="clearfix">
+                	<p class="fl p1">昵称</p>
+                    <a class="rl" href="javascript:;">
+                    	<span class="sp1">我是欧巴</span>
+                    </a>
+                </li>
+                 <li class="clearfix sex">
+                	<p class="fl">性别</p>
+                    <a class="rl" href="javascript:;">
+                    	<span class="sp1">男</span>
+                    </a>
+                </li>
+                 <li class="clearfix">
+                	<p class="fl p3">个性描述:</p>
+                    <p class="fl p2 spe_txt">这家伙居然没有个性，我去</p>
+                    <a class="rl" href="javascript:;">
+                        <span class="sp2 sp_top"></span>
+                    </a>
+                </li>
+            </ul>
+            
+            <ul class="s_myacList">
+            	<li class="clearfix">
+                	<p class="fl">
+                    	<span class="us_sina"></span>
+                        <span>新浪微博[已绑定]</span>
+                    </p>
+                    <a class="rl a_txt a_col" href="javascript:;">取消绑定</a>
+                </li>
+                <li class="clearfix">
+                	<p class="fl p4">
+                    	<span class="us_tx"></span>
+                        <span>腾讯微博[未绑定]</span>
+                    </p>
+                    <a class="rl a_txt" href="javascript:;">立即绑定</a>
+                </li>
+                 <li class="clearfix">
+                	<p class="fl p4">
+                    	<span class="us_qqzone"></span>
+                        <span>微信账号[未绑定]</span>
+                    </p>
+                    <a class="rl a_txt" href="javascript:;">立即绑定</a>
+                </li>
+            </ul>
+        	<p class="us_btnBox"><a href="#2"><input class="us_btn" type="button" value="退出登录"/></a></p>
+        </section>
+        <div class="alertBox">
+        	<div class="s_box1">
+            	<p class="p1">
+                	<span>男生</span>
+                    <span>女生</span>
+                </p>
+            </div>
+           <p class="al_p2"><input type="button" value="取消"/></p>
+
+        </div>
+        <div class="s_shade"></div>
+    </div>
+</body>
+</html>

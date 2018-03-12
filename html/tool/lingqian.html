@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>灵签</title>
+<meta content="yes" name="apple-mobile-web-app-capable">
+<meta name="description" content="" />
+<meta name="keywords" content=""/>
+<meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=4.0, user-scalable=no" name="viewport" id="viewport" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<link rel="stylesheet" type="text/css" href="../../css/common.css">
+<link rel="stylesheet" type="text/css" href="../../css/tools.css">
+<script src="../../js/jquery.js"></script>
+<script>
+$(function(){
+	$(".btn_lingqian").click(function(){
+		$(".pic_lq").addClass("shake");
+	})
+})
+</script>
+
+
+</head>
+
+<body>
+	<div class="wrapper pd bg_w">
+    	<header class="s_head">
+            <a class="re_btn" href="#2"><img src="../../img/ico/return.png" alt="返回按钮"/>返回</a>
+            <h1>灵签</h1>
+        </header> 
+        
+        <div class="hot_tool lingqian">
+        	<div class="pic_lq"></div>
+            <p class="lq_text">摇一摇，让你的好运快快到来！</p>
+            <p class="lq_text2">（摇动手机或点击均可以抽签）</p>
+            <a href="lingqian_result.html" class="btn_lingqian"><img src="../../img/tool/btn_lq.png" alt=""></a>
+    	</div>
+    
+	</div>
+    
+    <script>
+			var SHAKE_THRESHOLD = 700;  
+			var last_update = 0;
+			var x = y = z = last_x = last_y = last_z = 0;
+			function deviceMotionHandler(eventData) {  
+				var acceleration = eventData.accelerationIncludingGravity;
+				var curTime = new Date().getTime();
+				if ((curTime - last_update) > 100) {
+					var diffTime = curTime - last_update;
+					last_update = curTime;
+					x = acceleration.x;  
+					y = acceleration.y;  
+					z = acceleration.z;  
+					var speed = Math.abs(x + y + z - last_x - last_y - last_z) / diffTime * 10000;
+								
+					if (speed > SHAKE_THRESHOLD) { 
+						$(".pic_lq").addClass("shake");
+					}
+					  
+					last_x = x;  
+					last_y = y;  
+					last_z = z;  
+				}  
+			};
+			
+			//监听运动传感事件,判断是不是有感应器
+			if (window.DeviceMotionEvent) {  
+				window.addEventListener('devicemotion', deviceMotionHandler, false);  
+			} else {  
+				alert('没有检测到感应器');  
+			}
+		</script>
+
+</body>
+</html>

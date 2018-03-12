@@ -1,0 +1,477 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>发现频道</title>
+<meta content="yes" name="apple-mobile-web-app-capable">
+<meta name="description" content="" />
+<meta name="keywords" content=""/>
+<meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=4.0, user-scalable=no" name="viewport" id="viewport" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<link rel="stylesheet" type="text/css" href="../../css/common.css">
+<link rel="stylesheet" type="text/css" href="../../css/userCenter.css">
+<script src="../../js/jquery.js"></script>
+<script src="../../js/TouchSlide.1.1.js"></script>
+<script>
+$(function(){
+	$(".t_hd li").click(function(){
+		var nav_index = $(this).index();
+		$(this).addClass("on").siblings().removeClass("on");
+		$(".tab_lst").eq(nav_index).show().siblings().hide();
+	});
+	
+	$(".s_findBox:gt(0)").hide();
+	$(".s_head ul li").click(function(){
+		$(this).addClass("se").siblings().removeClass("se");
+		$(".s_findBox").eq($(this).index()).show().siblings(".s_findBox").hide();
+	});
+	
+	$(".tougao_area .close").click(function(){
+		$(".tougao_area").hide();	
+	})
+	
+	$(".contribute").click(function(){
+		$(".tougao_area").show();	
+	})
+	
+})
+</script>
+</head>
+
+<body>
+	<div class="wrapper bg_w rel">
+    	<div class="tougao_area">
+            <div class="close"><img src="../../img/tool/ico_close.png"></div>
+            <div class="tougao_area_contant">
+                <h1>星座之家欢迎您投稿给我们</h1>	
+                <p>接受投稿内容：</p>
+                <p>1.原创星座文章；</p>
+                <p>2.原创命理文章；</p>
+                <p>3.原创热点话题；</p>
+                <p>2.原创心理测试；</p>
+                
+                <p class="mt20">投稿规则说明：</p>
+                <p>1.请发布原创的内容，如果时候转载请标注转载并确认原作者同意转载；</p>
+                <p>2.请发布原创的内容，如果时候转载请标注转载并确认原作者同意转载；</p>
+                <p>3.请发布原创的内容，如果时候转载请标注转载并确认原作者同意转载；</p>
+                <p class="mt20">投稿地址：edt@smallsword.cn</p>
+            </div>
+        </div>
+        
+        <header class="s_head">
+        	<a href="#" class="contribute">投稿</a>
+        	<ul class="clearfix fd_list">
+            	<li class="se"><span>热门工具</span></li>
+                <li><span>心理测试</span></li>
+            </ul>
+        </header>
+        <section class="s_findBox pd1">
+        	<ul class="s_findList clearfix">
+            	<li>
+                	<a href="#2">
+                    	<span><img src="../../img/test_xz.png" alt="星座查询"/></span>
+                    	<p>星座查询</p>
+                    </a>
+                </li>
+            	<li>
+                	<a href="#2">
+                    	<span><img src="../../img/test_bz.png" alt="生辰八字"/></span>
+                    	<p>生辰八字查询</p>
+                    </a>
+                </li>
+                <li>
+                	<a href="#2">
+                    	<span><img src="../../img/test_ky.png" alt="开运宝贝"/></span>
+                    	<p>开运宝贝浏览</p>
+                    </a>
+                </li>
+                <li class="mt1">
+                	<a href="#2">
+                    	<span><img src="../../img/test_xzpd.png" alt="星座速配"/></span>
+                    	<p>星座速配</p>
+                    </a>
+                </li>
+                <li class="mt1">
+                	<a href="#2">
+                    	<span><img src="../../img/test_bir.png" alt="生日密码"/></span>
+                    	<p>生日密码</p>
+                    </a>
+                </li>
+                
+                <li class="mt1">
+                	<a href="#2">
+                    	<span><img src="../../img/test_name.png" alt="姓名测试"/></span>
+                    	<p>姓名测试</p>
+                    </a>
+                </li>
+                <li class="mt1">
+                	<a href="#2">
+                    	<span><img src="../../img/test_yl.png" alt="月老灵签"/></span>
+                    	<p>月老灵签</p>
+                    </a>
+                </li>
+                <li class="mt1">
+                	<a href="#2">
+                    	<span><img src="../../img/test_gy.png" alt="观音灵签"/></span>
+                    	<p>观音灵签</p>
+                    </a>
+                </li>
+                <li class="mt1">
+                	<a href="#2">
+                    	<span class="sp_hdx"><img src="../../img/test_hdx.png" alt="黄大仙灵签"/></span>
+                    	<p>黄大仙灵签</p>
+                    </a>
+                </li>
+                <li class="mt1">
+                	<a href="#2">
+                    	<span><img src="../../img/test_phone.png" alt="手机号码"/></span>
+                    	<p>手机号码吉凶</p>
+                    </a>
+                </li>
+                 <li class="mt1">
+                	<a href="#2">
+                    	<span><img src="../../img/test_cp.png" alt="车牌号码"/></span>
+                    	<p>车牌号码测试</p>
+                    </a>
+                </li>
+                <li class="mt1">
+                	<a href="#2">
+                    	<span><img src="../../img/test_card.png" alt="身份证号码"/></span>
+                    	<p>身份证号吉凶</p>
+                    </a>
+                </li>
+                <li class="mt1">
+                	<a href="#2">
+                    	<span><img src="../../img/test_qq.png" alt="qq号码吉凶"/></span>
+                    	<p>QQ号码吉凶</p>
+                    </a>
+                </li>
+            </ul>
+        </section>
+    	
+        <section class="s_findBox pd f_col">
+       		<div class="tabBox">
+                <div class="t_hd">
+                    <ul>
+                        <li class="on">热门</li>
+                        <li>爱情</li>
+                        <li>性格</li>
+                        <li>事业</li>
+                        <li>财富</li>
+                        <li>综合</li>
+                    </ul>
+                </div>
+                <div class="t_bd">
+                    <div class="tab_lst" style="display:block">
+                        <div id="slideBox" class="slideBox">
+                            <div class="bd">
+                                <ul>
+                                <li>
+                                    <a class="pic" href="#"><img src="../../img/lb1.png"/></a>
+                                    <a class="tit" href="#">一切都会好起来的，即使不是在今天</a>
+                                </li>
+                                <li>
+                                    <a class="pic" href="#"><img src="../../img/lb2.png"/></a>
+                                    <a class="tit" href="#">我们念念不忘的日子被我们遗忘了</a>
+                                </li>
+                                <li>
+                                    <a class="pic" href="#"><img src="../../img/lb3.png"/></a>
+                                    <a class="tit" href="#">但愿，时光，如初见</a>
+                                </li>
+                                </ul>
+                            </div>
+            
+                            <div class="hd">
+                                <ul></ul>
+                            </div>
+                        </div>
+                        <script type="text/javascript">
+                            TouchSlide({ 
+                                slideCell:"#slideBox",
+                                titCell:".hd ul", //开启自动分页 autoPage:true ，此时设置 titCell 为导航元素包裹层
+                                mainCell:".bd ul", 
+                                effect:"leftLoop", 
+                                autoPage:true,//自动分页
+                                autoPlay:true //自动播放
+                            });
+                        </script>
+                        <ul class="pro_lst">
+                        <li>
+                            <a href="#">
+                                <h4>要终结孤单你怎么做？要终结孤单你怎么做？要终结孤单你怎么做？要终结孤单你怎么做？要终结孤单你怎么做？要终结孤单你怎么做？要终结孤单你怎么做？要终结孤单你怎么做？</h4>
+                                <div class="test_num">
+                                    <i class="tn01"></i><span>1946877</span><i class="tn02"></i><span>12568</span><i class="tn03"></i><span>1946877</span><i class="tn04"></i><span>10小时前</span>  
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <h4>要终结孤单你怎么做？要终结孤单你怎么做？要终结孤单你怎么做？要终结孤单你怎么做？要终结孤单你怎么做？要终结孤单你怎么做？要终结孤单你怎么做？要终结孤单你怎么做？</h4>
+                                <div class="test_num">
+                                    <i class="tn01"></i><span>1946877</span><i class="tn02"></i><span>12568</span><i class="tn03"></i><span>1946877</span><i class="tn04"></i><span>10小时前</span>  
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <h4>要终结孤单你怎么做？要终结孤单你怎么做？要终结孤单你怎么做？要终结孤单你怎么做？要终结孤单你怎么做？要终结孤单你怎么做？要终结孤单你怎么做？要终结孤单你怎么做？</h4>
+                                <div class="test_num">
+                                    <i class="tn01"></i><span>1946877</span><i class="tn02"></i><span>12568</span><i class="tn03"></i><span>1946877</span><i class="tn04"></i><span>10小时前</span>  
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <h4>要终结孤单你怎么做？要终结孤单你怎么做？要终结孤单你怎么做？要终结孤单你怎么做？要终结孤单你怎么做？要终结孤单你怎么做？要终结孤单你怎么做？要终结孤单你怎么做？</h4>
+                                <div class="test_num">
+                                    <i class="tn01"></i><span>1946877</span><i class="tn02"></i><span>12568</span><i class="tn03"></i><span>1946877</span><i class="tn04"></i><span>10小时前</span>  
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <h4>要终结孤单你怎么做？要终结孤单你怎么做？要终结孤单你怎么做？要终结孤单你怎么做？要终结孤单你怎么做？要终结孤单你怎么做？要终结孤单你怎么做？要终结孤单你怎么做？</h4>
+                                <div class="test_num">
+                                    <i class="tn01"></i><span>1946877</span><i class="tn02"></i><span>12568</span><i class="tn03"></i><span>1946877</span><i class="tn04"></i><span>10小时前</span>  
+                                </div>
+                            </a>
+                        </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="tab_lst">
+                        <ul class="pro_lst">
+                        <li>
+                            <a href="#">
+                                <h4>你成剩女的机会有多大？</h4>
+                                <div class="test_num">
+                                    <i class="tn01"></i><span>1946877</span><i class="tn02"></i><span>12568</span><i class="tn03"></i><span>1946877</span><i class="tn04"></i><span>10小时前</span>  
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <h4>你成剩女的机会有多大？</h4>
+                                <div class="test_num">
+                                    <i class="tn01"></i><span>1946877</span><i class="tn02"></i><span>12568</span><i class="tn03"></i><span>1946877</span><i class="tn04"></i><span>10小时前</span>  
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <h4>你成剩女的机会有多大？</h4>
+                                <div class="test_num">
+                                    <i class="tn01"></i><span>1946877</span><i class="tn02"></i><span>12568</span><i class="tn03"></i><span>1946877</span><i class="tn04"></i><span>10小时前</span>  
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <h4>你成剩女的机会有多大？</h4>
+                                <div class="test_num">
+                                    <i class="tn01"></i><span>1946877</span><i class="tn02"></i><span>12568</span><i class="tn03"></i><span>1946877</span><i class="tn04"></i><span>10小时前</span>  
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <h4>你成剩女的机会有多大？</h4>
+                                <div class="test_num">
+                                    <i class="tn01"></i><span>1946877</span><i class="tn02"></i><span>12568</span><i class="tn03"></i><span>1946877</span><i class="tn04"></i><span>10小时前</span>  
+                                </div>
+                            </a>
+                        </li>
+                        </ul>
+                    </div>
+                    <div class="tab_lst">
+                        <ul class="pro_lst">
+                        <li>
+                            <a href="#">
+                                <h4>你有多会做人？</h4>
+                                <div class="test_num">
+                                    <i class="tn01"></i><span>1946877</span><i class="tn02"></i><span>12568</span><i class="tn03"></i><span>1946877</span><i class="tn04"></i><span>10小时前</span>  
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <h4>你有多会做人？</h4>
+                                <div class="test_num">
+                                    <i class="tn01"></i><span>1946877</span><i class="tn02"></i><span>12568</span><i class="tn03"></i><span>1946877</span><i class="tn04"></i><span>10小时前</span>  
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <h4>你有多会做人？</h4>
+                                <div class="test_num">
+                                    <i class="tn01"></i><span>1946877</span><i class="tn02"></i><span>12568</span><i class="tn03"></i><span>1946877</span><i class="tn04"></i><span>10小时前</span>  
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <h4>你有多会做人？</h4>
+                                <div class="test_num">
+                                    <i class="tn01"></i><span>1946877</span><i class="tn02"></i><span>12568</span><i class="tn03"></i><span>1946877</span><i class="tn04"></i><span>10小时前</span>  
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <h4>你有多会做人？</h4>
+                                <div class="test_num">
+                                    <i class="tn01"></i><span>1946877</span><i class="tn02"></i><span>12568</span><i class="tn03"></i><span>1946877</span><i class="tn04"></i><span>10小时前</span>  
+                                </div>
+                            </a>
+                        </li>
+                        </ul>
+                    </div>
+                    <div class="tab_lst">
+                        <ul class="pro_lst">
+                        <li>
+                            <a href="#">
+                                <h4>你的时间被什么偷走？</h4>
+                                <div class="test_num">
+                                    <i class="tn01"></i><span>1946877</span><i class="tn02"></i><span>12568</span><i class="tn03"></i><span>1946877</span><i class="tn04"></i><span>10小时前</span>  
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <h4>你的时间被什么偷走？</h4>
+                                <div class="test_num">
+                                    <i class="tn01"></i><span>1946877</span><i class="tn02"></i><span>12568</span><i class="tn03"></i><span>1946877</span><i class="tn04"></i><span>10小时前</span>  
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <h4>你的时间被什么偷走？</h4>
+                                <div class="test_num">
+                                    <i class="tn01"></i><span>1946877</span><i class="tn02"></i><span>12568</span><i class="tn03"></i><span>1946877</span><i class="tn04"></i><span>10小时前</span>  
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <h4>你的时间被什么偷走？</h4>
+                                <div class="test_num">
+                                    <i class="tn01"></i><span>1946877</span><i class="tn02"></i><span>12568</span><i class="tn03"></i><span>1946877</span><i class="tn04"></i><span>10小时前</span>  
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <h4>你的时间被什么偷走？</h4>
+                                <div class="test_num">
+                                    <i class="tn01"></i><span>1946877</span><i class="tn02"></i><span>12568</span><i class="tn03"></i><span>1946877</span><i class="tn04"></i><span>10小时前</span>  
+                                </div>
+                            </a>
+                        </li>
+                        </ul>
+                    </div>
+                    <div class="tab_lst">
+                        <ul class="pro_lst">
+                        <li>
+                            <a href="#">
+                                <h4>你会选择什么样的蛋糕？</h4>
+                                <div class="test_num">
+                                    <i class="tn01"></i><span>1946877</span><i class="tn02"></i><span>12568</span><i class="tn03"></i><span>1946877</span><i class="tn04"></i><span>10小时前</span>  
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <h4>你会选择什么样的蛋糕？</h4>
+                                <div class="test_num">
+                                    <i class="tn01"></i><span>1946877</span><i class="tn02"></i><span>12568</span><i class="tn03"></i><span>1946877</span><i class="tn04"></i><span>10小时前</span>  
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <h4>你会选择什么样的蛋糕？</h4>
+                                <div class="test_num">
+                                    <i class="tn01"></i><span>1946877</span><i class="tn02"></i><span>12568</span><i class="tn03"></i><span>1946877</span><i class="tn04"></i><span>10小时前</span>  
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <h4>你会选择什么样的蛋糕？</h4>
+                                <div class="test_num">
+                                    <i class="tn01"></i><span>1946877</span><i class="tn02"></i><span>12568</span><i class="tn03"></i><span>1946877</span><i class="tn04"></i><span>10小时前</span>  
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <h4>你会选择什么样的蛋糕？</h4>
+                                <div class="test_num">
+                                    <i class="tn01"></i><span>1946877</span><i class="tn02"></i><span>12568</span><i class="tn03"></i><span>1946877</span><i class="tn04"></i><span>10小时前</span>  
+                                </div>
+                            </a>
+                        </li>
+                        </ul>
+                    </div>
+                    <div class="tab_lst">
+                        <ul class="pro_lst">
+                        <li>
+                            <a href="#">
+                                <h4>时光倒流，你希望做什么？</h4>
+                                <div class="test_num">
+                                    <i class="tn01"></i><span>1946877</span><i class="tn02"></i><span>12568</span><i class="tn03"></i><span>1946877</span><i class="tn04"></i><span>10小时前</span>  
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <h4>时光倒流，你希望做什么？</h4>
+                                <div class="test_num">
+                                    <i class="tn01"></i><span>1946877</span><i class="tn02"></i><span>12568</span><i class="tn03"></i><span>1946877</span><i class="tn04"></i><span>10小时前</span>  
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <h4>时光倒流，你希望做什么？</h4>
+                                <div class="test_num">
+                                    <i class="tn01"></i><span>1946877</span><i class="tn02"></i><span>12568</span><i class="tn03"></i><span>1946877</span><i class="tn04"></i><span>10小时前</span>  
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <h4>时光倒流，你希望做什么？</h4>
+                                <div class="test_num">
+                                    <i class="tn01"></i><span>1946877</span><i class="tn02"></i><span>12568</span><i class="tn03"></i><span>1946877</span><i class="tn04"></i><span>10小时前</span>  
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <h4>时光倒流，你希望做什么？</h4>
+                                <div class="test_num">
+                                    <i class="tn01"></i><span>1946877</span><i class="tn02"></i><span>12568</span><i class="tn03"></i><span>1946877</span><i class="tn04"></i><span>10小时前</span>  
+                                </div>
+                            </a>
+                        </li>
+                        </ul>
+                    </div> 
+                </div>
+        </div>
+    </section>
+    <footer class="ftBox">
+        <ul class="ftList clearfix">
+            <li class="ft01"><a href="javascript:;"></a><span></span></li>
+            <li class="ft02"><a href="javascript:;"></a><span></span></li>
+            <li class="ft03"><a class="se"  href="javascript:;"></a><span></span></li>
+            <li class="ft04"><a href="javascript:;"></a><span></span></li>
+        </ul>
+    </footer>
+    </div>
+</body>
+</html>

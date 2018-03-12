@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>星座详情</title>
+<meta content="yes" name="apple-mobile-web-app-capable">
+<meta name="description" content="" />
+<meta name="keywords" content=""/>
+<meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=4.0, user-scalable=no" name="viewport" id="viewport" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<link rel="stylesheet" type="text/css" href="../../css/common.css">
+<link rel="stylesheet" type="text/css" href="../../css/userCenter.css">
+<script src="../../js/jquery.js"></script>
+<script>
+$(window).load(function(){
+	dt_img();
+	});
+
+$(window).resize(function(){
+	dt_img();
+	});
+function dt_img(){
+	$(".zan_people li:not(.last1)").height($(".zan_people li").width());
+	$(".zan_people li:not(.last1)").each(function() {
+	  if($(this).find("img").height()!=$(".zan_people li").height()){
+		  $(this).find("img").height($(".zan_people li").height());
+		  } 
+    });
+	};	
+
+</script>
+</head>
+
+<body>
+	<div class="wrapper">
+    	<header class="s_head sh1">
+            <a class="re_btn" href="#2"><img src="../../img/ico/return.png" alt="返回按钮"/>返回</a>
+            <h1>摩羯跟我上床只为报复</h1>
+        </header>
+    	
+        <div class="xz_listBox">
+        	<div class="dt_list">
+                <header class="dt_listTop clearfix">
+                	<div class="fl">
+                        <a class="head_img1" href="javascript:;">
+                            <img src="../../img/s_head.jpg" alt="小头像"/>
+                            <span class="dt_sex1"></span>
+                        </a>
+                        <span class="dt_zl">
+                             <p class="dt_nc"><span>我是欧巴</span><b class="b1">1级</b></p>
+                             <p class="dt_min">1分钟前</p>
+                        </span>
+                    </div>
+                    <span class="rl dt_tips">举报</span>
+                </header>
+                <section class="dt_post">
+                    <p class="post_txt1">我是双鱼，他是射手，我18，她38，我相信我们会一直走下去。</p>
+                    <p class="post_txt2">一辈子，不离不弃！你们可以给我带来肯定吗，毕竟我那么爱他。一辈子，不离不弃！一辈子，不离不弃！</p>
+                </section>
+                
+                <div class="dt_zanBox">
+                	<b class="dt_plbtn"></b>
+                    <span class="dt_zan"><b></b>2144</span>
+                    <span class="dt_pl"><b class="se"></b>46</span>
+                </div>
+            </div>
+            <ul class="zan_people clearfix">
+                <li><span><img src="../../img/s_head.jpg"/></span></li>
+                <li><span><img src="../../img/s_head.jpg"/></span></li>
+                <li><span><img src="../../img/s_head.jpg"/></span></li>
+                <li><span><img src="../../img/s_head.jpg"/></span></li>
+                <li><span><img src="../../img/s_head.jpg"/></span></li>
+                <li class="last1">等赞过</li>
+            </ul>
+
+        </div>
+        <div class="hf_list">
+        	<h2>最热回复<b></b></h2>
+        	<div class="dt_list">
+                <header class="dt_listTop clearfix">
+                	<div class="fl lBox">
+                        <a class="head_img1" href="javascript:;">
+                            <img src="../../img/s_head.jpg" alt="小头像"/>
+                            <span class="dt_sex1"></span>
+                        </a>
+                        <span class="dt_zl">
+                             <p class="dt_nc"><span>我是欧巴</span><span class="sp_lz">楼主</span><b class="b2">6级</b></p>
+                             <p class="dt_min">1分钟前</p>
+                        </span>
+                    </div>
+                    <span class="rl dt_peo"><b></b>50</span>
+                </header>
+                <section class="dt_post">
+                    <p class="post_txt1">我是双鱼，他是射手，我18，她38，我相信我们会一直走下去。</p>
+                    <p class="post_txt2"><span class="hf_name">山间小路：</span>一辈子，不离不弃！你们可以给我带来肯定吗，毕竟我那么爱他。一辈子，不离不弃！一辈子，不离不弃！</p>
+                </section>
+                
+                <div class="dt_zanBox">
+                	<b class="dt_plbtn"></b>
+                    <span class="dt_zan"><b></b>2144</span>
+                    <span class="dt_pl"><b class="se"></b>46</span>
+                </div>
+            </div>
+        </div>
+    	
+        <div class="g_ms_footer" style="display:block" id="review_area">
+            <div class="product_footer rel clearfix">
+             <div class="g_fttxtbox rel">
+                <span class="g_pen"></span>
+                <input class="g_ft2txt" type="text" placeholder="写评论">
+            </div>
+            <a href="javascript:;" class="g_ft2btn"><span></span></a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

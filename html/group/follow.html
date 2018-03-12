@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>关注</title>
+<meta content="yes" name="apple-mobile-web-app-capable">
+<meta name="description" content="" />
+<meta name="keywords" content=""/>
+<meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=4.0, user-scalable=no" name="viewport" id="viewport" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<link rel="stylesheet" type="text/css" href="../../css/common.css">
+<link rel="stylesheet" type="text/css" href="../../css/userCenter.css">
+<script src="../../js/jquery.js"></script>
+<script>
+$(function(){
+	$(".floBox .sp_addBtn").click(function(){
+		if($(this).text()=="加关注"){
+			$(this).text("取消关注");
+			}
+		else{
+			$(this).text("加关注");
+			}
+		
+		});
+	})
+</script>
+</head>
+
+<body>
+    <div class="wrapper">
+    	<header class="s_head sh1">
+            <a class="re_btn" href="#2"><img src="../../img/ico/return.png" alt="返回按钮"/>返回</a>
+            <h1>关注</h1>
+        </header>
+    	<ul class="fllowList">
+        	<li class="clearfix">
+                <a class="head_img1 fl" href="javascript:;">
+                    <img src="../../img/s_head.jpg" alt="小头像"/>
+                    <span class="dt_sex1"></span>
+                </a>
+                
+                <div class="clearfix rl floBox">
+                     <span class="dt_zl fl">
+                         <p class="dt_nc"><span>我是欧巴</span><b>1级</b></p>
+                         <p class="dt_qm">个性签名个性签名个性签名个性签名</p>
+                    </span>
+                    <span class="rl sp_addBtn">加关注</span>
+                </div>
+            </li>
+            
+            <li class="clearfix">
+                <a class="head_img1 fl" href="javascript:;">
+                    <img src="../../img/s_head.jpg" alt="小头像"/>
+                    <span class="dt_sex1"></span>
+                </a>
+                
+                <div class="clearfix rl floBox">
+                     <span class="dt_zl fl">
+                         <p class="dt_nc"><span>我是欧巴</span><b>1级</b></p>
+                         <p class="dt_qm">个性签名个性签名个性签名个性签名</p>
+                    </span>
+                    <span class="rl sp_addBtn">加关注</span>
+                </div>
+                
+            </li>
+        
+        </ul>
+        
+    </div>
+</body>
+</html>

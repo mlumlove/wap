@@ -1,0 +1,264 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>星座之家</title>
+<meta content="yes" name="apple-mobile-web-app-capable">
+<meta name="description" content="" />
+<meta name="keywords" content=""/>
+<meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=4.0, user-scalable=no" name="viewport" id="viewport" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<link rel="stylesheet" type="text/css" href="../../css/common.css">
+<link rel="stylesheet" type="text/css" href="../../css/index.css">
+<script src="../../js/jquery.js"></script>
+<script>
+$(function(){
+	$(".s_pic span").height($(".s_pic span").width());
+	
+	$(".pack_up").click(function(){
+		if($(this).hasClass("on")){
+			$(".p_text").hide();
+			$(".sort").hide();
+			$(this).find("em").html("展开详情");
+			$(this).attr("class","pack_up");	
+		}else{
+			$(".p_text").show();
+			$(".sort").show();
+			$(this).find("em").html("收起详情");
+			$(this).attr("class","pack_up on");		
+		};	
+	})
+	
+	$(".bg_shake").height($(document).height());
+	
+	$(".bg_shake,.pop").click(function(){
+		$(".bg_shake").hide();
+		$(".pop").hide();
+	})
+	
+	$(".big_circle").click(function(){
+		$(".bg_shake").show();
+		$(".pop").show();
+		$(".bg_shake").height($(document).height());		
+	})
+	
+})
+	
+</script>
+</head>
+
+<body>
+	<div class=" wrapper pd rel">
+    	<div class="bg_shake"></div>
+        <div class="pop">
+        	<ul>
+                <li><img src="../../img/sign/xz_by.png" alt="白羊座 3.21 - 4.19"></li>
+                <li><img src="../../img/sign/xz_jn.png" alt="金牛座 4.20 - 5.20"></li>
+                <li><img src="../../img/sign/xz_sz.png" alt="双子座 5.21 - 6.21"></li>
+                <li><img src="../../img/sign/xz_jx.png" alt="巨蟹座 6.22 - 7.22"></li>
+                <li><img src="../../img/sign/xz_leo.png" alt="狮子座 7.23 - 8.22"></li>
+                <li><img src="../../img/sign/xz_cn.png" alt="处女座 8.23 - 9.22"></li>
+                <li><img src="../../img/sign/xz_tc.png" alt="天秤座 9.23 - 10.23"></li>
+                <li><img src="../../img/sign/xz_tx.png" alt="天蝎座 10.24 - 11.22"></li>
+                <li><img src="../../img/sign/xz_ss.png" alt="射手座 11.23 - 12.21"></li>
+                <li><img src="../../img/sign/xz_mj.png" alt="摩羯座 12.22 - 1.19"></li>
+                <li><img src="../../img/sign/xz_sp.png" alt="水瓶座 1.20 - 2.18"></li>
+                <li><img src="../../img/sign/xz_sy.png" alt="双鱼座 2.19 - 3.20"></li>
+            </ul>
+        </div>
+        <section class="i_head bg_w">
+        	<h1>白羊座<span>(03/21-04/19)</span></h1>
+            <div class="circle rel">
+            	<div class="big_circle rel">
+                	<img src="../../img/index/xqIcon6.png" alt="">
+                    <span class="rocketship"></span>
+                    
+                    <div class="small_circle">
+                    <a href="forture.html" class="sc rel">
+                        <span class="rocketship"></span>
+                    </a>
+                </div>
+                </div>
+                
+            </div>
+            <ul class="luck_lst clearfix">
+                <li>整体运势：<span class="ico_star is00"></span></li>
+                <li>工作运势：<span class="ico_star is01"></span></li>
+                <li>爱情运势：<span class="ico_star is02"></span></li>
+                <li>理财运势：<span class="ico_star is03"></span></li>
+                <li>商谈指数： <span>90%</span></li>
+                <li>健康指数： <span>90%</span></li>
+                <li>幸运数字： <span>9</span></li>
+                <li>幸运颜色： <span>灰色</span></li>
+                <li>速配星座： <span>处女座</span></li>
+            </ul>
+        </section>
+        
+        <div class="content">
+        
+        <section class="parse rel">
+           <h3>战神白羊座</h3>
+           <i class="pack_up on"><span></span> <em>收起详情</em></i>
+           <p class="p_text">白羊座的人热情冲动、爱冒险、慷慨、天不怕地不怕，而且一旦下定决心，不到黄河心不死，排除万难的要达到目的。大部分属于白羊座的......<a href="xz_detail.html">查看详情</a></p>
+           <dl class="sort">
+           <dt>白羊血型：</dt>
+           <dd><a href="#">O型</a><a href="#">A型</a><a href="#">B型</a><a href="#">AB型</a></dd>
+           </dl>
+           <dl class="sort">
+           <dt>白羊详说：</dt>
+           <dd><a href="#">来历</a><a href="#">塔罗</a><a href="#">爱情</a><a href="#">性格</a></dd>
+           </dl>
+        </section>
+        <p class="section_line"></p>
+         
+        <section class="topic rel">
+            <h3><span><img src="../../img/index/ico_hot.png" alt=""/></span>热门话题</h3>
+            <i>换一批</i>
+            <ul class="tp_list">
+            <li>
+                <a href="#">
+                    <div class="p_text clearfix">
+                        <p class="fl">史上最有缘分的星座配对，你知道几个呢？</p>
+                        <span class="rl">7小时前<b></b></span>
+                    </div>
+                    <div class="p_thumb clearfix">
+                        <p class="fl"><img src="../../img/s_head.jpg" alt=""/></p>
+                        <span class="rl">“众里寻他千百度，蓦然回首，那人却在灯火阑珊处。”在爱情的路上你是不是也曾无数次不知所措，面对爱情你是否也感觉到迷茫。你不知道你的缘分会什么时候来到，也不知道它是不是已经悄然离开。那么，你想知道和你最有缘分的是谁吗？下面一起来看看十二星座里面最有缘分的星座配对吧。</span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="p_text clearfix">
+                        <p class="fl">说变脸就变脸的星座女</p>
+                        <span class="rl">7小时前<b></b></span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="p_text clearfix">
+                        <p class="fl">在职场中滥竽充数的星座</p>
+                        <span class="rl">7小时前<b></b></span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="p_text clearfix">
+                        <p class="fl">说变脸就变脸的星座女</p>
+                        <span class="rl">7小时前<b></b></span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="p_text clearfix">
+                        <p class="fl">十二星座如何对付嘴贱的人</p>
+                        <span class="rl">7小时前<b></b></span>
+                    </div>
+                </a>
+            </li>
+            </ul>
+        </section>
+        
+        <p class="section_line"></p>
+
+        <section class="handpick rel">
+            <h3><span><img src="../../img/index/ico_tj.png" alt=""/></span>解梦精选</h3>
+            <a href="" class="more">更多</a>
+            <div class="sincere">
+            	<h4>变脸的星座女</h4>
+                <p class="s_pic clearfix">
+                	<span><img src="../../img/s_head.jpg"></span>
+                    <span><img src="../../img/aa.jpg"></span>
+                    <span><img src="../../img/s_head.jpg"></span>	
+                </p>
+                <div class="test_num tnm">
+                    <i class="tn01"></i><span>1946877</span><i class="tn02"></i><span>12568</span><i class="tn04"></i><span>10小时前</span>  
+                </div>
+            </div>
+            <ul class="tp_list">
+            <li>
+                <a href="#">
+                    <div class="p_text clearfix">
+                        <p class="fl">说变脸就变脸的星座女</p>
+                        <span class="rl">7小时前<b></b></span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="p_text clearfix">
+                        <p class="fl">在职场中滥竽充数的星座</p>
+                        <span class="rl">7小时前<b></b></span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="p_text clearfix">
+                        <p class="fl">十二星座如何对付嘴贱的人</p>
+                        <span class="rl">7小时前<b></b></span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="p_text clearfix">
+                        <p class="fl">说变脸就变脸的星座女</p>
+                        <span class="rl">7小时前<b></b></span>
+                    </div>
+                </a>
+            </li>
+            </ul>
+        </section>
+        
+        <p class="section_line"></p>
+
+        <section class="handpick rel hot_test">
+            <h3><span><img src="../../img/index/ico_test.png" alt=""/></span>热门测试</h3>
+            <a href="" class="more">更多</a>
+            <div class="test_area rel">
+                <p class="thumb"><img src="../../img/banner.png" alt=""/></p>
+                <p class="line">测测你最近会被谁宠爱？</p>
+            </div>
+            <div class="test_num">
+                <i class="tn01"></i><span>1946877</span><i class="tn02"></i><span>12568</span><i class="tn03"></i><span>1946877</span><i class="tn04"></i><span>10小时前</span>  
+            </div>
+            <ul class="tp_list">
+            <li>
+                <a href="#">
+                    <div class="p_text clearfix">
+                        <p class="fl">解析人类最常见的10个梦境之一解析人类最常见的10个梦境之一</p>
+                        <span class="rl">7小时前<b></b></span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="p_text clearfix">
+                        <p class="fl">解析人类最常见的10个梦境之一解析人类最常见的10个梦境之一</p>
+                        <span class="rl">7小时前<b></b></span>
+                    </div>
+                </a>
+            </li>
+            </ul>
+        </section>
+        
+        <p class="section_line"></p>
+        </div>
+        
+        <footer class="ftBox">
+       		<ul class="ftList clearfix">
+            	<li class="ft01"><a href="javascript:;"></a><span></span></li>
+                <li class="ft02"><a href="javascript:;"></a><span></span></li>
+                <li class="ft03"><a href="javascript:;"></a><span></span></li>
+                <li class="ft04"><a class="se" href="javascript:;"></a><span></span></li>
+            </ul>
+       </footer>
+	</div>
+</body>
+</html>

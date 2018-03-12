@@ -1,0 +1,154 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>详细资料</title>
+<meta content="yes" name="apple-mobile-web-app-capable">
+<meta name="description" content="" />
+<meta name="keywords" content=""/>
+<meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=4.0, user-scalable=no" name="viewport" id="viewport" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<link rel="stylesheet" type="text/css" href="../../css/common.css">
+<link rel="stylesheet" type="text/css" href="../../css/userCenter.css">
+<script src="../../js/jquery.js"></script>
+<script>
+	$(function(){
+		$(".dt_tabList li").click(function(){
+			$(this).find("b").show().parent("li").siblings().find("b").hide();
+			var dt_index = $(this).index();
+			$(".dt_tabBox1 > div").eq(dt_index).show().siblings().hide();
+			});
+			
+	//点赞手势
+	$(".dt_zanBox .dt_zan b").click(function(){
+		$(this).toggleClass("se");
+		});
+	$(".dt_zanBox .dt_pl b").click(function(){
+		$(this).toggleClass("se");
+		});	
+			
+		});
+
+</script>
+</head>
+
+<body>
+	<div class="wrapper">
+    	<header class="dt_head">
+        	<div class="dt_top">
+            	<a class="re_btn" href="#2"><img src="../../img/ico/return.png" alt="返回按钮"/>返回</a>
+                <h1>详细资料</h1>
+                <a class="dt_bjbtn" href="javascript:;"></a>
+            </div>
+        	
+            <div class="dt_news">
+            	<a class="head_img" href="javascript:;">
+                	<img src="../../img/s_head.jpg" alt="头像"/>
+                	<span class="dt_sex"></span>
+                </a>
+                <p class="dt_nc"><span>我是欧巴</span><b class="b1">1级</b></p>
+                <p class="dt_qm">我是欧巴一个天下无双的哥们</p>
+                
+                <span class="sx_btn"><b></b>私信</span>
+                <span class="gz_btn"><b></b>关注</span>
+            </div>
+            
+            <div class="dt_bottom clearfix">
+            	<p class="fl dt_xdj">
+                	<span></span>
+                    七级星友/48770星币
+                </p>
+                <div class="rl dt_gzList">
+                	<p>
+                    	<span>12</span>
+                        <span>帖子</span>
+                    </p>
+                    <p>
+                    	<span>99</span>
+                        <span>评论</span>
+                    </p>
+                    <p>
+                    	<span>99</span>
+                        <span>关注</span>
+                    </p>
+                    <p>
+                    	<span>999</span>
+                        <span>粉丝</span>
+                    </p>
+                </div>
+            </div>
+        </header>
+        
+        <section class="dt_comment">
+        	<ul class="dt_tabList clearfix">
+            	<li>我的帖子<b></b></li>
+                <li>我的评论<b style="display:none;"></b></li>
+            </ul>
+        	<div class="dt_tabBox1">
+            	<div class="dt_postList">
+                	<div class="dt_list">
+                    	<header class="dt_listTop">
+                        	<a class="head_img1" href="javascript:;">
+                            	<img src="../../img/s_head.jpg" alt="小头像"/>
+                                <span class="dt_sex1"></span>
+                            </a>
+                            <span class="dt_zl">
+                        		 <p class="dt_nc"><span>我是欧巴</span><b>1级</b></p>
+                                 <p class="dt_min">1分钟前</p>
+                            </span>
+                        </header>
+                        <section class="dt_post">
+                        	<p class="post_txt1">我是双鱼，他是射手，我18，她38，我相信我们会一直走下去。</p>
+                        	<p class="post_txt2">一辈子，不离不弃！你们可以给我带来肯定吗，毕竟我那么爱他。一辈子，不离不弃！一辈子，不离不弃！</p>
+                        </section>
+                        
+                        <div class="dt_zanBox">
+                        	<span class="dt_zan"><b></b>2144</span>
+                            <span class="dt_pl"><b></b>46</span>
+                        </div>
+                    </div>
+                    <div class="dt_list">
+                    	<header class="dt_listTop">
+                        	<a class="head_img1" href="javascript:;">
+                            	<img src="../../img/s_head.jpg" alt="小头像"/>
+                                <span class="dt_sex1"></span>
+                            </a>
+                            <span class="dt_zl">
+                        		 <p class="dt_nc"><span>我是欧巴</span><b>1级</b></p>
+                                 <p class="dt_min">1分钟前</p>
+                            </span>
+                        </header>
+                        <section class="dt_post">
+                        	<p class="post_txt1">我是双鱼，他是射手，我18，她38，我相信我们会一直走下去。</p>
+                        	<p class="post_txt2">一辈子，不离不弃！你们可以给我带来肯定吗，毕竟我那么爱他。一辈子，不离不弃！一辈子，不离不弃！</p>
+                        </section>
+                        
+                        <div class="dt_zanBox">
+                        	<span class="dt_zan"><b></b>2144</span>
+                            <span class="dt_pl"><b></b>46</span>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+                <div class="dt_plList">
+                	<div class="dt_list1">
+                    	<h3>5月前回复：</h3>
+                    	<p class="hf_txt">不错说的。</p>
+                        <h2>原帖</h2>
+                        <p class="post_txt2">一辈子，不离不弃！你们可以给我带来肯定吗，毕竟我那么爱他。一辈子，不离不弃！一辈子，不离不弃！</p>
+                    </div>
+                    <div class="dt_list1">
+                    	<h3>5月前回复：</h3>
+                    	<p class="hf_txt">不错说的。</p>
+                        <h2>原帖</h2>
+                        <p class="post_txt2">一辈子，不离不弃！你们可以给我带来肯定吗，毕竟我那么爱他。一辈子，不离不弃！一辈子，不离不弃！</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

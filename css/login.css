@@ -1,0 +1,80 @@
+@charset "utf-8";
+/*登录---*/
+.s_logList,.s_regBox .s_regList{width:90%;height:auto;margin:0 auto;padding:10% 0;text-align:center}
+.s_logList .log_logo{display:inline-block;width:99px;height:99px;}
+.s_logList .log_logo img{width:100%;height:100%}
+.s_logList .s_logby{margin:8% auto 0;width:85%;}
+.s_logList .s_logby li{padding:10px 0;border-bottom:1px solid #e7f0fd;overflow:hidden}
+.s_logList .s_logby li:nth-last-child(1){border-bottom:none}
+.s_logList .s_logby li span.log_txt{color:#fff;font-size:1.4rem;display:inline-block;width:50%;padding-left:5px;text-align:left}
+.s_logList .s_logby li span.log_txt a{color:#fff}
+.s_logList .s_logby li span.log_sina,.s_logList .s_logby li span.log_qq,.s_logList .s_logby li span.log_tx{display:inline-block;width:30px;height:30px;margin-right:5px;background:url(../img/login/log_saw.png) no-repeat;vertical-align:-10px;}
+.s_logList .s_logby li span.log_sina{background-position:0 -35px;background-size:100% auto;}
+.s_logList .s_logby li span.log_qq{background-position:0 0;background-size:100% auto;}
+.s_logList .s_logby li span.log_tx{background-position:0 -70px;background-size:100% auto;}
+.s_logList .s_logby li span.log_phone{display:inline-block;width:17px;height:32px;margin-right:10px;background:url(../img/login/phone.png) no-repeat;background-size:100% 100%;vertical-align:-8px}
+.s_logList .s_logby li span.log_txt span{font-size:1.6rem;color:#d7ba9a;margin:0 5px}
+
+/*手机登录注册---*/
+.lbp_list,.zch_list{width:90%;margin:0 auto;padding:3% 0}
+.lbp_list p,.zch_list p{width:100%;border:1px solid #fff;padding:10px 0;margin-top:15px}
+.lbp_list p label{display:inline-block;width:20%;text-align:right;font-size:1.4rem;color:#fff}
+.lbp_list p input,.zch_list p input{background:none;width:75%;font-size:1.4rem;color:#fff}
+.lbp_btnBox input{display:block;width:100%;margin:20px auto 0;padding:10px 0;background:#5b2e7e;border:1px solid #9b64be;color:#fff;border-radius:8px;font-size:1.4rem;cursor:pointer}
+.tjBox{width:90%;margin:10px auto 0;padding-bottom:25px}
+.tjBox a{font-size:1.4rem;color:#fff}
+.zch_Box{padding:20px 0 25px}
+.zch_list p label{display:inline-block;width:20%;text-align:center;font-size:1.4rem;color:#fff}
+.zch_list p input{font-size:1.4rem}
+.zch_list p.p1 input{width:47%;}
+.zch_list .sp_code{display:inline-block;width:30%;padding:5px 0;text-align:center;color:#fff;background:#5b2e7e;border:1px solid #9b64be;border-radius:5px;font-size:1.4rem;cursor:pointer}
+.zch_list .zch_btnBox{display:block}
+.zch_list .zch_btnBox input{width:100%;padding:10px 0;margin-top:20px;font-size:1.4rem;color:#fff;background:#5b2e7e;border:1px solid #9b64be;border-radius:8px}
+
+/*注册---*/
+.s_regList{padding:3% 0}
+.s_form{width:90%;margin:0 auto;}
+.s_form p{padding:15px 10px;border:1px solid #dfdfdf;margin-top:20px}
+.s_form p label{display:inline-block;width:16%;text-align:right;margin-right:5px;font-size:1.4rem;color:#fff}
+.s_form p input{width:80%;font-size:1.4rem;color:#fff;background:none}
+.s_form input.s_regBtn{width:100%;padding:10px 0;color:#fff;text-align:center;font-size:1.4rem;background:#5b2e7e;border:1px solid #9b64be;border-radius:8px;margin-top:10px}
+
+
+@media screen and (min-width:480px){
+	/*登录---*/
+	.s_logList .log_logo{width:146px;height:146px}
+	.s_logList .s_logby li span.log_txt{font-size:1.8rem}
+	.s_logList .s_logby li span.log_sina{width:44px;height:44px;background-position:0 -51px;background-size:100% auto}
+	.s_logList .s_logby li span.log_qq{width:44px;height:44px;background-position:0 0;background-size:100% auto}
+	.s_logList .s_logby li span.log_tx{width:44px;height:44px;background-position:0 -103px;background-size:100% auto}
+	.s_logList .s_logby li span.log_phone{width:25px;height:47px;background-size:100% 100%}
+	.s_logList .s_logby li span.log_txt span{font-size:2rem}
+	
+	/*手机登录*/
+	.lbp_list p label,.lbp_list p input,.lbp_btnBox input,.tjBox a,.zch_list .sp_code,.zch_list p label,.zch_list p input,.zch_list .zch_btnBox input{font-size:1.8rem}
+	/*注册---*/
+	.s_form p label,.s_form p input{font-size:1.8rem}
+	.s_form input.s_regBtn{font-size:1.8rem}
+}
+
+@media screen and (min-width:640px){
+	/*登录---*/
+	.s_logList .log_logo{width:198px;height:198px}
+    .s_logList .s_logby li span.log_txt{font-size:2.4rem}
+	.s_logList .s_logby li span.log_sina{width:60px;height:60px;background-position:0 -70px;background-size:100% auto;vertical-align:-22px}
+	.s_logList .s_logby li span.log_qq{width:60px;height:60px;background-position:0 0;background-size:100% auto;vertical-align:-22px}
+	.s_logList .s_logby li span.log_tx{width:60px;height:60px;background-position:0 -140px;background-size:100% auto;vertical-align:-22px}
+	.s_logList .s_logby li span.log_phone{width:34px;height:64px;background-size:100% 100%;vertical-align:-20px}
+	.s_logList .s_logby li span.log_txt span{font-size:2.6rem}
+	.s_logList .s_logby li span.log_txt span{margin:0 10px}
+	.s_logList .s_logby li span.log_txt a:nth-child(1){margin-left:10px}
+	
+	/*手机登录*/
+	.lbp_list p label,.lbp_list p input,.lbp_btnBox input,.tjBox a,.zch_list .sp_code,.zch_list p label,.zch_list p input,.zch_list .zch_btnBox input{font-size:2.4rem}
+	
+	/*注册---*/
+	.s_form p label,.s_form p input{font-size:2.4rem}
+	.s_form input.s_regBtn{font-size:2.4rem}
+
+	.bg_all{background:#999}
+}

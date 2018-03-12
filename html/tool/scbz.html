@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>生辰八字</title>
+<meta content="yes" name="apple-mobile-web-app-capable">
+<meta name="description" content="" />
+<meta name="keywords" content=""/>
+<meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=4.0, user-scalable=no" name="viewport" id="viewport" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<link rel="stylesheet" type="text/css" href="../../css/common.css">
+<link rel="stylesheet" type="text/css" href="../../css/index.css">
+<link rel="stylesheet" type="text/css" href="../../css/tools.css">
+<script src="../../js/jquery.js"></script>
+<script>
+$(function(){
+	$(".btn_gossip").click(function(){
+		$(this).addClass("on")
+	})
+})
+</script>
+</head>
+
+<body>
+	<div class="wrapper pd bg_w">
+    	<header class="s_head">
+            <a class="re_btn" href="#2"><img src="../../img/ico/return.png" alt="返回按钮"/>返回</a>
+            <h1>生辰八字</h1>
+        </header> 
+        
+        <div class="hot_tool scbz">
+        	<dl class="title">
+				<dt>算命说明</dt>
+				<dd>姓名必须输入中文，生日必须输入公历，（公历即阳历/新历，农历即阴历/旧历）。</dd>
+			</dl>	
+            
+            <div class="name">
+				<h2>姓名性别：</h2>
+				<ul class="clearfix">
+					<li><label>姓:</label>
+						<p>
+							<input type="text">
+						</p>
+					</li>
+					<li><label>名:</label>
+						<p>
+							<input type="text">
+						</p>
+					</li>
+					<li><label>性别:</label>
+						<p>
+							<select>
+								<option>男</option>
+								<option>女</option>
+							</select>
+						</p>
+					</li>
+				</ul>
+			</div>
+            
+            <div class="name">
+				<h2>阴历生日：</h2>
+				<ul class="clearfix">
+					<li>
+						<p>
+							<select>
+								<option>1990</option>
+								<option>1991</option>
+                                <option>1992</option>
+							</select>
+						</p>
+                        <label>年</label>
+					</li>
+					<li>
+						<p>
+							<select>
+								<option>12</option>
+								<option>01</option>
+                                <option>02</option>
+							</select>
+						</p>
+                        <label>月</label>
+					</li>
+					<li>
+						<p>
+							<select>
+								<option>23</option>
+								<option>24</option>
+                                <option>25</option>
+							</select>
+						</p>
+                        <label>日</label>
+					</li>
+                    <li>
+						<p>
+							<select>
+								<option>子</option>
+								<option>女</option>
+							</select>
+						</p>
+                        <label>点</label>
+					</li>
+				</ul>
+			</div>
+            
+            <a href="scbz_result.html" class="btn_gossip"></a>	
+            <div class="name">
+				<h2>特别提示：</h2>
+                <p>本结果为系统自动分析，仅供参考，八字缺什么与补什么无关，具体应由专业老师分析。</p>
+			</div>
+        
+    	</div>
+	</div>
+</body>
+</html>

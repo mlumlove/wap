@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title></title>
+<meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=4.0, user-scalable=yes" name="viewport" id="viewport" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<link rel="stylesheet" href="../../css/common.css" />
+<link rel="stylesheet" href="../../css/test.css" />
+<script src="../../js/jquery.js"></script>
+<script>
+    $( function(){
+        var index,str,val,prev=0,
+            num=0,obj = [],
+            $logo = $('.content .animate .logo'),
+            $red  = $('.content .animate .red'),
+            $li = $('.content .text li'),
+            span = $logo.children('span'),
+            bgW=$('.content .animate .bg').width();
+            _spanVal = span.html().split('/');
+        $li.click( function(){
+            val =$(this).attr('value');
+            if( val >1 ){$('.footer li').css({color:'#fff'});}else{return false}
+            
+            obj.push(val);
+            _left = bgW/_spanVal[1]*val;
+            _spanVal[0]=val;
+            $(this).addClass('on').siblings().removeClass('on');
+            animates(_left,_spanVal);
+        })
+        
+        $('.footer .next').click( function(){
+            _spanVal[0]=1;
+            left='5%';
+            $li.removeClass('on');
+            $('.footer li').css({color:'#A2A2A2'});
+            animates( left ,_spanVal);
+        });
+        $('.footer .prev').click( function(){
+            
+            if(obj.length <=1 ){
+                _spanVal[0]=1;
+                left="5%";
+                $('.footer li').css({color:'#a2a2a2'});
+                animates(left,_spanVal);
+                return false;
+            } else {
+                num = obj.pop();
+                val = obj[obj.length-1]
+                _left = bgW/_spanVal[1]*val;
+                _spanVal[0]= val;
+                animates(_left,_spanVal);
+            }
+        });
+        function animates(_left,_spanVal){
+            str = _spanVal.join('/');
+            span.html( str );
+            $logo.stop().animate({left:_left},1000);
+            $red.stop().animate({width:_left},1000);
+        };
+    })
+</script>
+</head>
+
+<body>
+<div class="wrapper">
+	<header class="s_head">
+        <a class="re_btn" href="#2"><img src="../../img/ico/return.png" alt="返回按钮"/>返回</a>
+        <h1>爱情测试</h1>
+    </header>
+      
+    <div class="header row">
+        <div class="header_title">
+            一字测你现在的爱情是好是坏
+        </div>
+        <div class="test_num">
+            <ul>
+            <li><i class="tn01"></i><span>1946877</span></li>
+            <li><i class="tn02"></i><span>12568</span></li>
+            <li><i class="tn03"></i><span>1946877</span></li>
+            <li><i class="tn04"></i><span>10小时前</span></li>
+            </ul>  
+        </div>
+    </div>
+    <div class="content">
+        <div style="padding: 0 3%;">
+            <div class="animate row">
+                <div class="bg"></div>
+                <div class="red"></div>
+                <div class="logo">
+                    <span>1/20</span>
+                </div>
+            </div>
+            <div class="text">
+                <p>1、你做了一个梦，在梦中你看见远方有一马，你直觉是什么颜色的呢？</p>
+                <ul>
+                    <li value="2">A.1</li>
+                    <li value="3">B.2</li>
+                    <li value="4">C.3</li>
+                    <li value="20">D.4</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <ul>
+            <li class="prev">上一题</li>
+            <li class="next">重新测试</li>
+        </ul>
+    </div>
+</div>
+</body>
+
+</html>

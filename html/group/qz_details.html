@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>我的群组--详情</title>
+<meta content="yes" name="apple-mobile-web-app-capable">
+<meta name="description" content="" />
+<meta name="keywords" content=""/>
+<meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=4.0, user-scalable=no" name="viewport" id="viewport" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<link rel="stylesheet" type="text/css" href="../../css/common.css">
+<link rel="stylesheet" type="text/css" href="../../css/userCenter.css">
+<script src="../../js/jquery.js"></script>
+<script>
+$(window).load(function(){
+	qd_img();
+	});
+$(window).resize(function(){
+	qd_img();
+	});	
+function qd_img(){
+	$(".qd_headList li").height($(".qd_headList li").width());
+	$(".mb_list li").height($(".mb_list li").width());
+	$(".qd_headList li").each(function(){
+		if($(this).find("img").height()!=$(this).height()){
+			$(this).find("img").height()=$(this).height();
+			}
+		});
+	}
+	
+$(function(){
+	$(".qt_btn").click(function(){
+		$(".down_lsit").toggle();
+		});
+	$(".down_lsit li").click(function(){
+		$(this).parent("ul").hide();
+		});	
+	});	
+</script>
+</head>
+
+<body>
+	<div class="wrapper rel">
+    	<header class="s_head sh1">
+            <a class="re_btn" href="#2"><img src="../../img/ico/return.png" alt="返回按钮"/></a>
+            <h1>吐槽新闻联播</h1>
+            <a class="qt_btn" href="#2"></a>
+        </header>
+        
+        <ul class="down_lsit">
+        	<li><b class="b1"></b><span>举报该群组</span></li>
+            <li><b class="b2"></b><span>清空群信息</span></li>
+            <li><b class="b3"></b><span>退出该群组</span></li>
+            <li><span class="l_arrow"></span></li>
+        </ul>
+        
+        <ul class="qd_headList clearfix">
+        	<li><img src="../../img/s_head.jpg"/></li>
+            <li><img src="../../img/s_head.jpg"/></li>
+            <li><img src="../../img/s_head.jpg"/></li>
+        </ul>
+        
+        <div class="member">
+        	<p class="p_tit">群成员(30/50)</p>
+            <ul class="mb_list clearfix">
+            	<li><img src="../../img/s_head.jpg"/></li>
+                <li><img src="../../img/s_head.jpg"/></li>
+                <li><img src="../../img/s_head.jpg"/></li>
+                <li><img src="../../img/s_head.jpg"/></li>
+                <li class="arro_right"><a href="javascript:;"></a></li>
+            </ul>
+            
+            <ul class="mb_list2">
+            	<li class="clearfix">
+                	<span class="fl">群号</span>
+                    <span class="rl">123456789</span>
+                </li>
+                <li class="clearfix">
+                	<span class="fl">星座</span>
+                    <span class="rl">双鱼座</span>
+                </li>
+                <li class="clearfix">
+                	<p class="fl p_intro">简介：欢迎各位星友来到这里交友，能带走的都带走吧，能就赶紧聊吧，不聊就都被带走。</p>
+                    <a class="rl ri_arrow" href="javascript:;"></a>
+                </li>
+                <li class="clearfix">
+                	<span class="fl">群主</span>
+                    <span class="rl"><span class="sp_imgBox"><img src="../../img/s_head.jpg"/></span>阿呆</span>
+                </li>
+            </ul>
+        </div>
+        
+        <p class="qz_btnBox"><a class="chat_btn" href="javascript:;">进入聊天</a></p>
+        
+    </div>
+</body>
+</html>

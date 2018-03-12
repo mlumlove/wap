@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>新建群组-群头像</title>
+<meta content="yes" name="apple-mobile-web-app-capable">
+<meta name="description" content="" />
+<meta name="keywords" content=""/>
+<meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=4.0, user-scalable=no" name="viewport" id="viewport" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<link rel="stylesheet" type="text/css" href="../../css/common.css">
+<link rel="stylesheet" type="text/css" href="../../css/userCenter.css">
+<script src="../../js/jquery.js"></script>
+<script>
+$(function(){
+	
+	$("#doc").change(function(){
+		$("#addimg").before("<li><img id = 'photo' alt=''><del></del></li>");
+		$(".nonstock-part1 ul li").height($(".nonstock-part1 ul li").width()); //为了保证上传图片是正方形 把图片父容器的的宽赋给高
+		
+		var imgView = document.getElementById("photo");
+		var docObj = document.getElementById("doc");
+		
+		imgView.src = window.URL.createObjectURL(docObj.files[0]);//获得图片路径的Js		
+		
+		$("#photo").removeAttr("id");//上传完毕后 移除img ID属性
+		
+		});
+	});
+</script>
+</head>
+
+<body>
+	<div class="wrapper wra2">
+    	<header class="s_head">
+            <a class="re_btn" href="#2"><img src="../../img/ico/return.png" alt="返回按钮"/></a>
+            <h1>新建群组</h1>
+        </header>
+       <p class="p_head">群主头像很关键噢，让Ta第一眼就能看到吧！</p>
+       
+      <div class="nonstock-part1">
+          <ul>
+              <li><img src="../../img/s_head.jpg" alt=""></li>
+              <li><img src="../../img/s_head.jpg" alt=""></li>
+              <li id="addimg">
+              	<img src="../../img/ico/addimg.png" alt="">
+              	<input type="file" name="file" id="doc" class="fileImage">
+              </li>
+          </ul>
+      </div>
+    
+        <p class="cg_btnBox">
+        	<a href="javascript:;"><input type="button" value="完成"/></a>
+        </p>
+    </div>
+</body>
+</html>
